@@ -7,18 +7,52 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		371FDBC12A1B0B5F0050C353 /* LaunchScreenStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371FDBC02A1B0B5F0050C353 /* LaunchScreenStep.swift */; };
+		371FDBC32A1B0BA70050C353 /* LaunchScreenStateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371FDBC22A1B0BA70050C353 /* LaunchScreenStateManager.swift */; };
+		371FDBC52A1B0C1D0050C353 /* LaunchScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371FDBC42A1B0C1D0050C353 /* LaunchScreenView.swift */; };
+		371FDBC72A1B0CCA0050C353 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371FDBC62A1B0CCA0050C353 /* ContentView.swift */; };
+		371FDBCB2A1C10850050C353 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371FDBCA2A1C10850050C353 /* TabBar.swift */; };
+		371FDBCD2A1C19DA0050C353 /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371FDBCC2A1C19DA0050C353 /* Tab.swift */; };
+		373A6FBB2A1D43F4006924AC /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373A6FBA2A1D43F4006924AC /* Styles.swift */; };
+		373A6FBF2A1D4835006924AC /* FeaturedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373A6FBE2A1D4835006924AC /* FeaturedItem.swift */; };
+		373A6FC12A1D4A85006924AC /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373A6FC02A1D4A85006924AC /* NavigationBar.swift */; };
+		373A6FC32A1D593F006924AC /* PreferenceKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373A6FC22A1D593F006924AC /* PreferenceKeys.swift */; };
+		373A6FC52A1D6259006924AC /* AnimatableFontModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373A6FC42A1D6259006924AC /* AnimatableFontModifier.swift */; };
+		373A6FC72A1D89D7006924AC /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373A6FC62A1D89D7006924AC /* Game.swift */; };
+		373A6FC92A1D9829006924AC /* MatchedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373A6FC82A1D9829006924AC /* MatchedView.swift */; };
+		373A6FCB2A1DA6AB006924AC /* GameCenterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373A6FCA2A1DA6AB006924AC /* GameCenterView.swift */; };
 		3749D3CB2A1AB9A5009FD1E7 /* platiciti_redesignApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3749D3CA2A1AB9A5009FD1E7 /* platiciti_redesignApp.swift */; };
-		3749D3CD2A1AB9A5009FD1E7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3749D3CC2A1AB9A5009FD1E7 /* ContentView.swift */; };
 		3749D3CF2A1AB9AB009FD1E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3749D3CE2A1AB9AB009FD1E7 /* Assets.xcassets */; };
 		3749D3D22A1AB9AB009FD1E7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3749D3D12A1AB9AB009FD1E7 /* Preview Assets.xcassets */; };
+		3749D3F22A1AE1C6009FD1E7 /* GamesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3749D3F12A1AE1C6009FD1E7 /* GamesView.swift */; };
+		3749D3F62A1AE240009FD1E7 /* iMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3749D3F52A1AE240009FD1E7 /* iMessageView.swift */; };
+		3749D3F82A1AE278009FD1E7 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3749D3F72A1AE278009FD1E7 /* CalendarView.swift */; };
+		3749D3FA2A1AE8A1009FD1E7 /* ShareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3749D3F92A1AE8A1009FD1E7 /* ShareView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		371FDBC02A1B0B5F0050C353 /* LaunchScreenStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenStep.swift; sourceTree = "<group>"; };
+		371FDBC22A1B0BA70050C353 /* LaunchScreenStateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenStateManager.swift; sourceTree = "<group>"; };
+		371FDBC42A1B0C1D0050C353 /* LaunchScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenView.swift; sourceTree = "<group>"; };
+		371FDBC62A1B0CCA0050C353 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		371FDBCA2A1C10850050C353 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		371FDBCC2A1C19DA0050C353 /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
+		373A6FBA2A1D43F4006924AC /* Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Styles.swift; sourceTree = "<group>"; };
+		373A6FBE2A1D4835006924AC /* FeaturedItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedItem.swift; sourceTree = "<group>"; };
+		373A6FC02A1D4A85006924AC /* NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
+		373A6FC22A1D593F006924AC /* PreferenceKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceKeys.swift; sourceTree = "<group>"; };
+		373A6FC42A1D6259006924AC /* AnimatableFontModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatableFontModifier.swift; sourceTree = "<group>"; };
+		373A6FC62A1D89D7006924AC /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		373A6FC82A1D9829006924AC /* MatchedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchedView.swift; sourceTree = "<group>"; };
+		373A6FCA2A1DA6AB006924AC /* GameCenterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCenterView.swift; sourceTree = "<group>"; };
 		3749D3C72A1AB9A5009FD1E7 /* platiciti_redesign.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = platiciti_redesign.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3749D3CA2A1AB9A5009FD1E7 /* platiciti_redesignApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = platiciti_redesignApp.swift; sourceTree = "<group>"; };
-		3749D3CC2A1AB9A5009FD1E7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3749D3CE2A1AB9AB009FD1E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3749D3D12A1AB9AB009FD1E7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3749D3F12A1AE1C6009FD1E7 /* GamesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesView.swift; sourceTree = "<group>"; };
+		3749D3F52A1AE240009FD1E7 /* iMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iMessageView.swift; sourceTree = "<group>"; };
+		3749D3F72A1AE278009FD1E7 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		3749D3F92A1AE8A1009FD1E7 /* ShareView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,9 +66,70 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		373A6FB62A1D413D006924AC /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				371FDBC62A1B0CCA0050C353 /* ContentView.swift */,
+				371FDBCA2A1C10850050C353 /* TabBar.swift */,
+				373A6FC02A1D4A85006924AC /* NavigationBar.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		373A6FB72A1D4166006924AC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				373A6FCA2A1DA6AB006924AC /* GameCenterView.swift */,
+				3749D3F52A1AE240009FD1E7 /* iMessageView.swift */,
+				3749D3F92A1AE8A1009FD1E7 /* ShareView.swift */,
+				3749D3F72A1AE278009FD1E7 /* CalendarView.swift */,
+				3749D3F12A1AE1C6009FD1E7 /* GamesView.swift */,
+				373A6FC82A1D9829006924AC /* MatchedView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		373A6FB82A1D4203006924AC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				371FDBCC2A1C19DA0050C353 /* Tab.swift */,
+				373A6FC22A1D593F006924AC /* PreferenceKeys.swift */,
+				373A6FC62A1D89D7006924AC /* Game.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		373A6FB92A1D421B006924AC /* LaunchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				371FDBC22A1B0BA70050C353 /* LaunchScreenStateManager.swift */,
+				371FDBC42A1B0C1D0050C353 /* LaunchScreenView.swift */,
+				371FDBC02A1B0B5F0050C353 /* LaunchScreenStep.swift */,
+			);
+			path = LaunchScreen;
+			sourceTree = "<group>";
+		};
+		373A6FBC2A1D45D4006924AC /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				373A6FBA2A1D43F4006924AC /* Styles.swift */,
+				373A6FC42A1D6259006924AC /* AnimatableFontModifier.swift */,
+			);
+			path = Styles;
+			sourceTree = "<group>";
+		};
+		373A6FBD2A1D480D006924AC /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				373A6FBE2A1D4835006924AC /* FeaturedItem.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		3749D3BE2A1AB9A5009FD1E7 = {
 			isa = PBXGroup;
 			children = (
+				373A6FBD2A1D480D006924AC /* Components */,
 				3749D3C92A1AB9A5009FD1E7 /* platiciti_redesign */,
 				3749D3C82A1AB9A5009FD1E7 /* Products */,
 			);
@@ -51,10 +146,14 @@
 		3749D3C92A1AB9A5009FD1E7 /* platiciti_redesign */ = {
 			isa = PBXGroup;
 			children = (
-				3749D3CA2A1AB9A5009FD1E7 /* platiciti_redesignApp.swift */,
-				3749D3CC2A1AB9A5009FD1E7 /* ContentView.swift */,
-				3749D3CE2A1AB9AB009FD1E7 /* Assets.xcassets */,
 				3749D3D02A1AB9AB009FD1E7 /* Preview Content */,
+				3749D3CE2A1AB9AB009FD1E7 /* Assets.xcassets */,
+				3749D3CA2A1AB9A5009FD1E7 /* platiciti_redesignApp.swift */,
+				373A6FB62A1D413D006924AC /* Navigation */,
+				373A6FB72A1D4166006924AC /* Views */,
+				373A6FB82A1D4203006924AC /* Model */,
+				373A6FBC2A1D45D4006924AC /* Styles */,
+				373A6FB92A1D421B006924AC /* LaunchScreen */,
 			);
 			path = platiciti_redesign;
 			sourceTree = "<group>";
@@ -137,8 +236,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3749D3CD2A1AB9A5009FD1E7 /* ContentView.swift in Sources */,
+				373A6FC72A1D89D7006924AC /* Game.swift in Sources */,
+				371FDBC12A1B0B5F0050C353 /* LaunchScreenStep.swift in Sources */,
+				371FDBC72A1B0CCA0050C353 /* ContentView.swift in Sources */,
+				373A6FBB2A1D43F4006924AC /* Styles.swift in Sources */,
+				3749D3FA2A1AE8A1009FD1E7 /* ShareView.swift in Sources */,
+				373A6FBF2A1D4835006924AC /* FeaturedItem.swift in Sources */,
+				373A6FC12A1D4A85006924AC /* NavigationBar.swift in Sources */,
+				3749D3F82A1AE278009FD1E7 /* CalendarView.swift in Sources */,
+				3749D3F22A1AE1C6009FD1E7 /* GamesView.swift in Sources */,
+				373A6FC52A1D6259006924AC /* AnimatableFontModifier.swift in Sources */,
+				371FDBC52A1B0C1D0050C353 /* LaunchScreenView.swift in Sources */,
+				371FDBC32A1B0BA70050C353 /* LaunchScreenStateManager.swift in Sources */,
+				373A6FC32A1D593F006924AC /* PreferenceKeys.swift in Sources */,
+				371FDBCB2A1C10850050C353 /* TabBar.swift in Sources */,
 				3749D3CB2A1AB9A5009FD1E7 /* platiciti_redesignApp.swift in Sources */,
+				3749D3F62A1AE240009FD1E7 /* iMessageView.swift in Sources */,
+				373A6FC92A1D9829006924AC /* MatchedView.swift in Sources */,
+				371FDBCD2A1C19DA0050C353 /* Tab.swift in Sources */,
+				373A6FCB2A1DA6AB006924AC /* GameCenterView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

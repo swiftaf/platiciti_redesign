@@ -1,0 +1,55 @@
+//
+//  ContentView.swift
+//  platiciti_redesign
+//
+//  Created by Daniel Zimmerman on 5/21/23.
+//
+
+import SwiftUI
+
+struct ContentView: View {
+    
+    @EnvironmentObject private var launchScreenState: LaunchScreenStateManager
+    
+    @AppStorage("selectedTab") var selectedTab: Tab = .games
+    
+    var body: some View {
+        ZStack(alignment: .bottom)  {
+            switch selectedTab {
+            case .games:
+                GamesView()
+            case .calHist:
+                CalendarView()
+            case .shareRes:
+                iMessageView()
+            case .gameCent:
+                GameCenterView()
+            }
+
+            TabBar()
+
+        }
+        
+        .safeAreaInset(edge: .bottom, content: {
+            Color.clear.frame(height: 44)
+        })
+        .task {
+            try? await getDataFromApi()
+            try? await Task.sleep(for: Duration.seconds(1))
+            self.launchScreenState.dismiss()
+        }
+    }
+    
+    fileprivate func getDataFromApi() async throws {
+        let googleURL = URL(string: "https://www.google.com")!
+        let (_,response) = try await URLSession.shared.data(from: googleURL)
+        print(response as? HTTPURLResponse)
+    }
+}
+
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        GamesView()
+            .environmentObject(LaunchScreenStateManager())
+    }
+}
