@@ -42,6 +42,7 @@ struct GameItem: View {
             Image(game.image)
                 .resizable()
                 .aspectRatio(contentMode: .fit)
+                .padding(20)
                 .matchedGeometryEffect(id: "image\(game.id)", in: namespace)
         )
         .background(
@@ -55,7 +56,6 @@ struct GameItem: View {
                 .matchedGeometryEffect(id: "mask\(game.id)", in: namespace)
         }
         .frame(height: 300)
-        .padding(20)
     }
 }
 

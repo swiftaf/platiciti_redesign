@@ -14,21 +14,26 @@ struct TabBar: View {
     
     
     var body: some View {
-        HStack {
-            buttons
-        }
-        .padding(.horizontal, 12)
-        .padding(.top, 14)
-        .frame(height: 88, alignment: .top)
-        .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 25, style: .continuous))
-        .background(
-            background
-        )
-        .overlay(
-            overlay
-        )
-        .frame(maxHeight: .infinity, alignment: .bottom)
+        GeometryReader { proxy in
+            let hasHomeIndicator = proxy.safeAreaInsets.bottom > 20
+            
+            HStack {
+                buttons
+            }
+            .padding(.horizontal, 12)
+            .padding(.top, 14)
+            .frame(height: hasHomeIndicator ? 88 : 62, alignment: .top)
+            .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: hasHomeIndicator ? 25 : 0, style: .continuous))
+            .background(
+                background
+            )
+            .overlay(
+                overlay
+            )
+            .strokeStyle(cornerRadius: hasHomeIndicator ? 25 : 0)
+            .frame(maxHeight: .infinity, alignment: .bottom)
         .ignoresSafeArea()
+        }
     }
     
     var buttons: some View {
@@ -117,7 +122,7 @@ struct TabBar_Previews: PreviewProvider {
         TabBar()
 //            .preferredColorScheme(.light)
 //            .environment(\.sizeCategory, .medium)
-            .previewDevice("iPhone 11")
+//            .previewDevice("iPhone 11")
 ///            .previewDevice("iPad Pro (12.9-inch) (6th generation)")
     }
 }

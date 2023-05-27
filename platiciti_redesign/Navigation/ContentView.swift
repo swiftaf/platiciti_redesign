@@ -8,10 +8,9 @@
 import SwiftUI
 
 struct ContentView: View {
-    
     @EnvironmentObject private var launchScreenState: LaunchScreenStateManager
-    
     @AppStorage("selectedTab") var selectedTab: Tab = .games
+    @EnvironmentObject var model: Model
     
     var body: some View {
         ZStack(alignment: .bottom)  {
@@ -27,6 +26,7 @@ struct ContentView: View {
             }
 
             TabBar()
+                .offset(y: model.showDetail ? 200 : 0)
 
         }
         
@@ -51,5 +51,6 @@ struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         HomeView()
             .environmentObject(LaunchScreenStateManager())
+            .environmentObject(Model())
     }
 }

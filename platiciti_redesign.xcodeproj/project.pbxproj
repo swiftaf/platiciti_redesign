@@ -31,6 +31,7 @@
 		37C65E332A21A22C00314B40 /* GameItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C65E322A21A22C00314B40 /* GameItem.swift */; };
 		37C65E352A21A3D300314B40 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C65E342A21A3D300314B40 /* GameView.swift */; };
 		37C65E372A21ADE300314B40 /* animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C65E362A21ADE300314B40 /* animations.swift */; };
+		37C65E392A22187600314B40 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C65E382A22187600314B40 /* Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +60,7 @@
 		37C65E322A21A22C00314B40 /* GameItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameItem.swift; sourceTree = "<group>"; };
 		37C65E342A21A3D300314B40 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 		37C65E362A21ADE300314B40 /* animations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = animations.swift; sourceTree = "<group>"; };
+		37C65E382A22187600314B40 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				371FDBCC2A1C19DA0050C353 /* Tab.swift */,
 				373A6FC22A1D593F006924AC /* PreferenceKeys.swift */,
 				373A6FC62A1D89D7006924AC /* Game.swift */,
+				37C65E382A22187600314B40 /* Model.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 				371FDBC52A1B0C1D0050C353 /* LaunchScreenView.swift in Sources */,
 				371FDBC32A1B0BA70050C353 /* LaunchScreenStateManager.swift in Sources */,
 				37C65E352A21A3D300314B40 /* GameView.swift in Sources */,
+				37C65E392A22187600314B40 /* Model.swift in Sources */,
 				37C65E372A21ADE300314B40 /* animations.swift in Sources */,
 				373A6FC32A1D593F006924AC /* PreferenceKeys.swift in Sources */,
 				371FDBCB2A1C10850050C353 /* TabBar.swift in Sources */,
