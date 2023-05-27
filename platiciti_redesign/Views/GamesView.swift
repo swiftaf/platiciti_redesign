@@ -8,9 +8,10 @@
 import SwiftUI
 
 struct GamesView: View {
-    @Environment(\.colorScheme) var colorScheme
-    
     @State var hasScrolled = false
+    @Namespace var namespace
+    @State var show = false
+    @State var showStatusBar = true
     
     var body: some View {
         ZStack {
@@ -20,9 +21,23 @@ struct GamesView: View {
                 scrollDetection
                 
                 featured
+                
+                Text("Games".uppercased())
+                    .font(.footnote.weight(.semibold))
+                    .foregroundColor(.secondary)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .padding(.horizontal, 20)
+                
+                if !show {
+                    GameItem(namespace: namespace, show: $show)        .onTapGesture {
+                        withAnimation(.openCard) {
+                            show.toggle()
+                            showStatusBar = false
+                        }
+                    }
+                }
 
                 
-                Color.clear.frame(height: 1000)
             }
             .coordinateSpace(name: "scroll")
             .safeAreaInset(edge: .top, content: {
@@ -30,7 +45,24 @@ struct GamesView: View {
             })
             .overlay(
                 NavigationBar(title: "Featured", hasScrolled: $hasScrolled)
-        )
+            )
+            
+            if show {
+                GameView(namespace: namespace, show: $show)
+                
+            }
+            
+        }
+        .statusBar(hidden: !showStatusBar)
+        .onChange(of: show) { newValue in
+            withAnimation(.closeCard) {
+                if newValue {
+                    showStatusBar = false
+                } else {
+                    showStatusBar = true
+                }
+            }
+
         }
         
     }
@@ -74,7 +106,7 @@ struct GamesView: View {
             }
         }
         .tabViewStyle(.page(indexDisplayMode: .never))
-        .frame(height: 430)
+        .frame(height: 330)
         .background(
             Image("launchScreenBgIpad")
                 .opacity(0.50)
