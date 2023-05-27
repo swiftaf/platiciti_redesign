@@ -17,7 +17,7 @@ struct ContentView: View {
         ZStack(alignment: .bottom)  {
             switch selectedTab {
             case .games:
-                GamesView()
+                HomeView()
             case .calHist:
                 CalendarView()
             case .shareRes:
@@ -49,7 +49,7 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        GamesView()
+        HomeView()
             .environmentObject(LaunchScreenStateManager())
     }
 }

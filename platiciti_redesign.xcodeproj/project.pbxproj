@@ -24,7 +24,7 @@
 		3749D3CB2A1AB9A5009FD1E7 /* platiciti_redesignApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3749D3CA2A1AB9A5009FD1E7 /* platiciti_redesignApp.swift */; };
 		3749D3CF2A1AB9AB009FD1E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3749D3CE2A1AB9AB009FD1E7 /* Assets.xcassets */; };
 		3749D3D22A1AB9AB009FD1E7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3749D3D12A1AB9AB009FD1E7 /* Preview Assets.xcassets */; };
-		3749D3F22A1AE1C6009FD1E7 /* GamesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3749D3F12A1AE1C6009FD1E7 /* GamesView.swift */; };
+		3749D3F22A1AE1C6009FD1E7 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3749D3F12A1AE1C6009FD1E7 /* HomeView.swift */; };
 		3749D3F62A1AE240009FD1E7 /* iMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3749D3F52A1AE240009FD1E7 /* iMessageView.swift */; };
 		3749D3F82A1AE278009FD1E7 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3749D3F72A1AE278009FD1E7 /* CalendarView.swift */; };
 		3749D3FA2A1AE8A1009FD1E7 /* ShareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3749D3F92A1AE8A1009FD1E7 /* ShareView.swift */; };
@@ -52,7 +52,7 @@
 		3749D3CA2A1AB9A5009FD1E7 /* platiciti_redesignApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = platiciti_redesignApp.swift; sourceTree = "<group>"; };
 		3749D3CE2A1AB9AB009FD1E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3749D3D12A1AB9AB009FD1E7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		3749D3F12A1AE1C6009FD1E7 /* GamesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesView.swift; sourceTree = "<group>"; };
+		3749D3F12A1AE1C6009FD1E7 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		3749D3F52A1AE240009FD1E7 /* iMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iMessageView.swift; sourceTree = "<group>"; };
 		3749D3F72A1AE278009FD1E7 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
 		3749D3F92A1AE8A1009FD1E7 /* ShareView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareView.swift; sourceTree = "<group>"; };
@@ -85,11 +85,11 @@
 		373A6FB72A1D4166006924AC /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				3749D3F12A1AE1C6009FD1E7 /* HomeView.swift */,
 				373A6FCA2A1DA6AB006924AC /* GameCenterView.swift */,
 				3749D3F52A1AE240009FD1E7 /* iMessageView.swift */,
 				3749D3F92A1AE8A1009FD1E7 /* ShareView.swift */,
 				3749D3F72A1AE278009FD1E7 /* CalendarView.swift */,
-				3749D3F12A1AE1C6009FD1E7 /* GamesView.swift */,
 				373A6FC82A1D9829006924AC /* MatchedView.swift */,
 				37C65E342A21A3D300314B40 /* GameView.swift */,
 			);
@@ -254,7 +254,7 @@
 				373A6FBF2A1D4835006924AC /* FeaturedItem.swift in Sources */,
 				373A6FC12A1D4A85006924AC /* NavigationBar.swift in Sources */,
 				3749D3F82A1AE278009FD1E7 /* CalendarView.swift in Sources */,
-				3749D3F22A1AE1C6009FD1E7 /* GamesView.swift in Sources */,
+				3749D3F22A1AE1C6009FD1E7 /* HomeView.swift in Sources */,
 				373A6FC52A1D6259006924AC /* AnimatableFontModifier.swift in Sources */,
 				371FDBC52A1B0C1D0050C353 /* LaunchScreenView.swift in Sources */,
 				371FDBC32A1B0BA70050C353 /* LaunchScreenStateManager.swift in Sources */,

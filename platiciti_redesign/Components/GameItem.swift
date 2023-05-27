@@ -9,22 +9,23 @@ import SwiftUI
 
 struct GameItem: View {
     var namespace: Namespace.ID
+    var game: Game = games[0]
     @Binding var show: Bool
 
     var body: some View {
         VStack  {
             Spacer()
             VStack (alignment: .leading, spacing: 12) {
-                Text("Wordle")
+                Text(game.title)
                     .font(.largeTitle.weight(.bold))
-                    .matchedGeometryEffect(id: "title", in: namespace)
+                    .matchedGeometryEffect(id: "title\(game.id)", in: namespace)
                 .frame(maxWidth: .infinity, alignment: .leading)
-                Text("20 section 3 hours".uppercased())
+                Text(game.subtitle.uppercased())
                     .font(.footnote.weight(.semibold))
-                    .matchedGeometryEffect(id: "subtitle", in: namespace)
-                Text("A whole bunch of sample text will go here. At least two lines worth.")
+                    .matchedGeometryEffect(id: "subtitle\(game.id)", in: namespace)
+                Text(game.text)
                     .font(.footnote)
-                    .matchedGeometryEffect(id: "text", in: namespace)
+                    .matchedGeometryEffect(id: "text\(game.id)", in: namespace)
             }
             .padding(20)
             .background(
@@ -32,26 +33,26 @@ struct GameItem: View {
                     .fill(.ultraThinMaterial)
                     .mask(RoundedRectangle(cornerRadius: 30, style: .continuous))
                     .blur(radius: 30)
-                    .matchedGeometryEffect(id: "blur", in: namespace)
+                    .matchedGeometryEffect(id: "blur\(game.id)", in: namespace)
             )
             
         }
         .foregroundStyle(.white)
         .background(
-            Image("3dWordle")
+            Image(game.image)
                 .resizable()
                 .aspectRatio(contentMode: .fit)
-                .matchedGeometryEffect(id: "image", in: namespace)
+                .matchedGeometryEffect(id: "image\(game.id)", in: namespace)
         )
         .background(
-            Image("launchScreenBgIpad")
+            Image(game.background)
                 .resizable()
                 .aspectRatio(contentMode: .fill)
-                .matchedGeometryEffect(id: "background", in: namespace)
+                .matchedGeometryEffect(id: "background\(game.id)", in: namespace)
         )
         .mask {
             RoundedRectangle(cornerRadius: 30, style: .continuous)
-                .matchedGeometryEffect(id: "mask", in: namespace)
+                .matchedGeometryEffect(id: "mask\(game.id)", in: namespace)
         }
         .frame(height: 300)
         .padding(20)

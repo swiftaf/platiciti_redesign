@@ -7,11 +7,12 @@
 
 import SwiftUI
 
-struct GamesView: View {
+struct HomeView: View {
     @State var hasScrolled = false
     @Namespace var namespace
     @State var show = false
     @State var showStatusBar = true
+    @State var selectedID = UUID()
     
     var body: some View {
         ZStack {
@@ -29,11 +30,16 @@ struct GamesView: View {
                     .padding(.horizontal, 20)
                 
                 if !show {
-                    GameItem(namespace: namespace, show: $show)        .onTapGesture {
-                        withAnimation(.openCard) {
-                            show.toggle()
-                            showStatusBar = false
-                        }
+                    cards
+                } else {
+                    ForEach(games) { game in
+                        Rectangle()
+                            .fill(.white)
+                            .frame(height:300)
+                            .cornerRadius(30)
+                            .shadow(color: Color("Shadow"), radius: 20, x:0, y: 10)
+                            .opacity(0.3)
+                        .padding(.horizontal, 30)
                     }
                 }
 
@@ -48,8 +54,7 @@ struct GamesView: View {
             )
             
             if show {
-                GameView(namespace: namespace, show: $show)
-                
+                detail
             }
             
         }
@@ -85,7 +90,7 @@ struct GamesView: View {
     }
     var featured: some View {
         TabView {
-            ForEach(games) { game in
+            ForEach(featuredGames) { game in
                 GeometryReader { proxy in
                     let minX = proxy.frame(in: .global).minX
                     
@@ -113,10 +118,33 @@ struct GamesView: View {
                 .ignoresSafeArea()
         )
     }
+    
+    var cards: some View {
+        ForEach(games) { game in
+            GameItem(namespace: namespace, game: game, show: $show)
+                .onTapGesture {
+                withAnimation(.openCard) {
+                    show.toggle()
+                    showStatusBar = false
+                    selectedID = game.id
+                }
+            }
+        }
+    }
+    
+    var detail: some View {
+        ForEach(games) { game in
+            if game.id == selectedID {
+                GameView(namespace: namespace, game: game, show: $show)
+                    .zIndex(1)
+                    .transition(.asymmetric(insertion: .opacity.animation(.easeInOut(duration: 0.1)), removal: .opacity.animation(.easeInOut(duration: 0.3).delay(0.2))))
+            }
+        }
+    }
 }
 
-struct GamesView_Previews: PreviewProvider {
+struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
-        GamesView()
+        HomeView()
     }
 }
