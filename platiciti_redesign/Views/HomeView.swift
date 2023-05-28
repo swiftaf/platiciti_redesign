@@ -46,6 +46,8 @@ struct HomeView: View {
                     }
                 }
                 .padding(.horizontal, 20)
+                Spacer()
+                Spacer()
             }
             .coordinateSpace(name: "scroll")
             .safeAreaInset(edge: .top, content: {

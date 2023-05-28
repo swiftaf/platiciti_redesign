@@ -15,7 +15,7 @@ final class LaunchScreenStateManager: ObservableObject {
         Task {
             state = .secondStep
 
-            try? await Task.sleep(for: Duration.seconds(1))
+            try? await Task.sleep(for: Duration.seconds(0))
 
             self.state = .finished
         }

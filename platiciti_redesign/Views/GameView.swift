@@ -22,7 +22,7 @@ struct GameView: View {
                 cover
                 
                 content
-                    .offset(y: 120)
+                    .offset(y: -200)
                     .padding(.bottom, 200)
                     .opacity(appear[2] ? 1 : 0)
             }
@@ -53,7 +53,7 @@ struct GameView: View {
                 Spacer()
             }
             .frame(maxWidth: .infinity)
-            .frame(height: scrollY > 0 ? 500 + scrollY : 500)
+            .frame(height: scrollY > 0 ? 200 + scrollY : 200)
             .foregroundStyle(.black)
             .background(
                 Image(game.image)
@@ -129,19 +129,19 @@ struct GameView: View {
             Text(game.subtitle.uppercased())
                 .font(.footnote.weight(.semibold))
                 .matchedGeometryEffect(id: "subtitle\(game.id)", in: namespace)
-            Text(game.text)
-                .font(.footnote)
-                .matchedGeometryEffect(id: "text\(game.id)", in: namespace)
+//            Text(game.text)
+//                .font(.footnote)
+//                .matchedGeometryEffect(id: "text\(game.id)", in: namespace)
             Divider()
                 .opacity(appear[0] ? 1 : 0)
             HStack {
-                Image(systemName: "person.crop.circle")
+                Image(systemName: "calendar")
                     .font(.title.weight(.bold))
                     .frame(width: 36, height: 36)
                     .foregroundColor(.secondary)
                     .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 14, style: .continuous))
                     .strokeStyle(cornerRadius: 14)
-                Text("Designed by Dan")
+                Text("Add to your 11 day streak!")
                     .font(.footnote)
             }
             .opacity(appear[1] ? 1 : 0)
@@ -153,7 +153,7 @@ struct GameView: View {
                     .mask(RoundedRectangle(cornerRadius: 30, style: .continuous))
                     .matchedGeometryEffect(id: "blur\(game.id)", in: namespace)
             )
-            .offset(y: 250)
+            .offset(y: 100)
             .padding(20)
     }
     
