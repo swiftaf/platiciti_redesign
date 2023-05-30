@@ -6,8 +6,18 @@
 //
 
 import SwiftUI
+import ComposableArchitecture
 
-struct GameView: View {
+extension AnyTransition {
+    static var moveAndFade: AnyTransition {
+        .asymmetric(
+            insertion: .move(edge: .trailing).combined(with: .opacity),
+            removal: .scale.combined(with: .opacity)
+        )
+    }
+}
+
+struct XGameView: View {
     var namespace: Namespace.ID
     var game: Game = games[0]
     @Binding var show: Bool
@@ -15,35 +25,56 @@ struct GameView: View {
     @EnvironmentObject var model: Model
     @State var viewState: CGSize = .zero
     @State var isDraggable = true
+    let gameLogic = GameLogic()
     
     var body: some View {
         ZStack {
             ScrollView {
                 cover
-                
-                content
-                    .offset(y: -200)
-                    .padding(.bottom, 200)
-                    .opacity(appear[2] ? 1 : 0)
+                Spacer()
             }
+            
             .background(Color("Background"))
+            
+            .shadow(color: .black.opacity(0.3), radius: 10, x: 0, y: 10)
             .mask(RoundedRectangle(cornerRadius: viewState.width / 3, style: .continuous))
-            .shadow(color: .black.opacity(0.3), radius: 30, x: 0, y: 10)
             .scaleEffect(viewState.width / -500 + 1)
             .background(.black.opacity(viewState.width / 500))
             .background(.ultraThinMaterial)
             .gesture(isDraggable ? drag : nil)
             .ignoresSafeArea()
             
+            game.gameView
+                .frame(height: 650, alignment: .bottom)
+                .matchedGeometryEffect(id: "gameView\(game.id)", in: namespace)
+                .offset(y: 145)
+                .opacity(appear[2] ? 1 : 0)
+                .environmentObject(gameLogic)
             button
         }
         .onAppear {
             fadeIn()
         }
         .onChange(of: show) { newValue in
+            
             fadeOut()
         }
     }
+    
+//    var gameViewView: some View {
+//        VStack {
+//            Spacer()
+//            game.gameView
+//        }
+//        .background(Color("Background"))
+//        .mask(RoundedRectangle(cornerRadius: viewState.width / 3, style: .continuous))
+//        .shadow(color: .black.opacity(0.3), radius: 30, x: 0, y: 10)
+//        .scaleEffect(viewState.width / -500 + 1)
+//        .background(.black.opacity(viewState.width / 500))
+//        .background(.ultraThinMaterial)
+//        .gesture(isDraggable ? drag : nil)
+//        .ignoresSafeArea()
+//    }
     
     var cover: some View {
         GeometryReader { proxy in
@@ -53,8 +84,8 @@ struct GameView: View {
                 Spacer()
             }
             .frame(maxWidth: .infinity)
-            .frame(height: scrollY > 0 ? 200 + scrollY : 200)
-            .foregroundStyle(.black)
+            .frame(height: scrollY > 0 ? 150 + scrollY : 150)
+            .foregroundStyle(Color("Border"))
             .background(
                 Image(game.image)
                     .resizable()
@@ -74,7 +105,7 @@ struct GameView: View {
                     .blur(radius: scrollY / 10)
             )
             .mask {
-                RoundedRectangle(cornerRadius: appear[0] ? 0 : 30, style: .continuous)
+                RoundedRectangle(cornerRadius: appear[0] ? 30 : 0, style: .continuous)
                     .matchedGeometryEffect(id: "mask\(game.id)", in: namespace)
                     .offset(y: scrollY > 0 ? -scrollY : 0)
             }
@@ -82,30 +113,21 @@ struct GameView: View {
                 overlayContent
                     .offset(y: scrollY > 0 ? scrollY * -0.6 : 0)
             )
+            
+                
         }
-        .frame(height: 500)
-    }
-    
-    var content: some View {
-        VStack(alignment: .leading, spacing: 30) {
-            Text("Overhead Shoulder Press · Front Delt Raise · Lateral Delt Raise · Bent-Over Reverse Fly · Arnold Press · Upright Row · Circle Press")
-                .font(.title3).fontWeight(.medium)
-            Text("This Game")
-                .font(.title).bold()
-            Text("Overhead Shoulder Press · Front Delt Raise · Lateral Delt Raise · Bent-Over Reverse Fly · Arnold Press · Upright Row · Circle PressOverhead Shoulder Press · Front Delt Raise · Lateral Delt Raise · Bent-Over Reverse Fly · Arnold Press · Upright Row · Circle Press")
-            Text("Overhead Shoulder Press · Front Delt Raise · Lateral Delt Raise · Bent-Over Reverse Fly · Arnold Press · Upright Row · Circle PressOverhead Shoulder Press · Front Delt Raise · Lateral Delt Raise · Bent-Over Reverse Fly · Arnold Press · Upright Row · Circle Press")
-            Text("Multiplatform app")
-                .font(.title).bold()
-            Text("Overhead Shoulder Press · Front Delt Raise · Lateral Delt Raise · Bent-Over Reverse Fly · Arnold Press · Upright Row · Circle Press")
-        }
-        .padding(20)
+        .frame(height: 350)
     }
     
     var button: some View {
         Button {
+            withAnimation(.spring(response: 0.8, dampingFraction: 0.5)){
+                appear[2] = false
+            }
             withAnimation(.closeCard) {
                 show.toggle()
                 model.showDetail.toggle()
+                
             }
         } label: {
             Image(systemName: "xmark")
@@ -120,15 +142,16 @@ struct GameView: View {
     }
     
     var overlayContent: some View {
+        
         VStack (alignment: .leading, spacing: 12){
             Text(game.title)
                 .font(.largeTitle.weight(.bold))
                 .matchedGeometryEffect(id: "title\(game.id)", in: namespace)
                 .frame(maxWidth: .infinity, alignment: .leading)
             
-            Text(game.subtitle.uppercased())
-                .font(.footnote.weight(.semibold))
-                .matchedGeometryEffect(id: "subtitle\(game.id)", in: namespace)
+//            Text(game.subtitle.uppercased())
+//                .font(.footnote.weight(.semibold))
+//                .matchedGeometryEffect(id: "subtitle\(game.id)", in: namespace)
 //            Text(game.text)
 //                .font(.footnote)
 //                .matchedGeometryEffect(id: "text\(game.id)", in: namespace)
@@ -137,14 +160,15 @@ struct GameView: View {
             HStack {
                 Image(systemName: "calendar")
                     .font(.title.weight(.bold))
-                    .frame(width: 36, height: 36)
+                    .frame(width: 30, height: 30)
                     .foregroundColor(.secondary)
                     .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 14, style: .continuous))
                     .strokeStyle(cornerRadius: 14)
-                Text("Add to your 11 day streak!")
+                Text(game.tagLine)
                     .font(.footnote)
             }
             .opacity(appear[1] ? 1 : 0)
+            
         }
             .padding(20)
             .background(
@@ -153,7 +177,7 @@ struct GameView: View {
                     .mask(RoundedRectangle(cornerRadius: 30, style: .continuous))
                     .matchedGeometryEffect(id: "blur\(game.id)", in: namespace)
             )
-            .offset(y: 100)
+            .offset(y: 90)
             .padding(20)
     }
     
@@ -191,7 +215,7 @@ struct GameView: View {
         withAnimation(.easeOut.delay(0.4)) {
             appear[1] = true
         }
-        withAnimation(.easeOut.delay(0.5)) {
+        withAnimation(.easeOut.delay(0.6)) {
             appear[2] = true
         }
     }
@@ -199,7 +223,6 @@ struct GameView: View {
     func fadeOut() {
         appear[0] = false
         appear[1] = false
-        appear[2] = false
     }
     
     func close () {
@@ -216,11 +239,11 @@ struct GameView: View {
     }
 }
 
-struct GameView_Previews: PreviewProvider {
+struct XGameView_Previews: PreviewProvider {
     @Namespace static var namespace
     
     static var previews: some View {
-        GameView(namespace: namespace, show: .constant(true))
+        XGameView(namespace: namespace, show: .constant(true))
             .environmentObject(Model())
     }
 }

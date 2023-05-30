@@ -25,7 +25,7 @@ struct HomeView: View {
                 featured
                 
                 Text("Games".uppercased())
-                    .font(.footnote.weight(.semibold))
+                    .font(.title3.weight(.semibold))
                     .foregroundColor(.secondary)
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .padding(.horizontal, 20)
@@ -55,6 +55,13 @@ struct HomeView: View {
             })
             .overlay(
                 NavigationBar(title: "Featured", hasScrolled: $hasScrolled)
+            )
+            .background(
+                Image("launchScreenBgIpad")
+                    .opacity(0.40)
+//                    .offset(x: 200, y: 200)
+                    .scaleEffect(0.7)
+                    .ignoresSafeArea()
             )
             
             if show {
@@ -118,11 +125,7 @@ struct HomeView: View {
         }
         .tabViewStyle(.page(indexDisplayMode: .never))
         .frame(height: 330)
-        .background(
-            Image("launchScreenBgIpad")
-                .opacity(0.50)
-                .ignoresSafeArea()
-        )
+
     }
     
     var cards: some View {
@@ -142,7 +145,7 @@ struct HomeView: View {
     var detail: some View {
         ForEach(games) { game in
             if game.id == selectedID {
-                GameView(namespace: namespace, game: game, show: $show)
+                XGameView(namespace: namespace, game: game, show: $show)
                     .zIndex(1)
                     .transition(.asymmetric(insertion: .opacity.animation(.easeInOut(duration: 0.1)), removal: .opacity.animation(.easeInOut(duration: 0.3).delay(0.2))))
             }

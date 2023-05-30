@@ -29,9 +29,39 @@
 		3749D3F82A1AE278009FD1E7 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3749D3F72A1AE278009FD1E7 /* CalendarView.swift */; };
 		3749D3FA2A1AE8A1009FD1E7 /* ShareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3749D3F92A1AE8A1009FD1E7 /* ShareView.swift */; };
 		37C65E332A21A22C00314B40 /* GameItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C65E322A21A22C00314B40 /* GameItem.swift */; };
-		37C65E352A21A3D300314B40 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C65E342A21A3D300314B40 /* GameView.swift */; };
+		37C65E352A21A3D300314B40 /* XGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C65E342A21A3D300314B40 /* XGameView.swift */; };
 		37C65E372A21ADE300314B40 /* animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C65E362A21ADE300314B40 /* animations.swift */; };
 		37C65E392A22187600314B40 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C65E382A22187600314B40 /* Model.swift */; };
+		37C65E4E2A23909500314B40 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C65E3D2A23909500314B40 /* AppState.swift */; };
+		37C65E4F2A23909500314B40 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C65E3E2A23909500314B40 /* GameView.swift */; };
+		37C65E502A23909500314B40 /* Words.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C65E3F2A23909500314B40 /* Words.swift */; };
+		37C65E512A23909500314B40 /* wordle-allowed-guesses_en.txt in Resources */ = {isa = PBXBuildFile; fileRef = 37C65E422A23909500314B40 /* wordle-allowed-guesses_en.txt */; };
+		37C65E522A23909500314B40 /* wordle-answers-alphabetical_en.txt in Resources */ = {isa = PBXBuildFile; fileRef = 37C65E432A23909500314B40 /* wordle-answers-alphabetical_en.txt */; };
+		37C65E532A23909500314B40 /* wordle-answers-alphabetical_fr.txt in Resources */ = {isa = PBXBuildFile; fileRef = 37C65E452A23909500314B40 /* wordle-answers-alphabetical_fr.txt */; };
+		37C65E542A23909500314B40 /* wordle-allowed-guesses_fr.txt in Resources */ = {isa = PBXBuildFile; fileRef = 37C65E462A23909500314B40 /* wordle-allowed-guesses_fr.txt */; };
+		37C65E562A23909500314B40 /* WordleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C65E482A23909500314B40 /* WordleApp.swift */; };
+		37C65E572A23909500314B40 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37C65E4A2A23909500314B40 /* Preview Assets.xcassets */; };
+		37C65E582A23909500314B40 /* KeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C65E4B2A23909500314B40 /* KeyboardView.swift */; };
+		37C65E592A23909500314B40 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C65E4C2A23909500314B40 /* Models.swift */; };
+		37C65E5A2A23909500314B40 /* GameOverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C65E4D2A23909500314B40 /* GameOverView.swift */; };
+		37C65E5D2A23930500314B40 /* CombineSchedulers in Frameworks */ = {isa = PBXBuildFile; productRef = 37C65E5C2A23930500314B40 /* CombineSchedulers */; };
+		37C65E602A23933900314B40 /* CasePaths in Frameworks */ = {isa = PBXBuildFile; productRef = 37C65E5F2A23933900314B40 /* CasePaths */; };
+		37C65E632A23936D00314B40 /* Collections in Frameworks */ = {isa = PBXBuildFile; productRef = 37C65E622A23936D00314B40 /* Collections */; };
+		37C65E652A23936D00314B40 /* DequeModule in Frameworks */ = {isa = PBXBuildFile; productRef = 37C65E642A23936D00314B40 /* DequeModule */; };
+		37C65E672A23936D00314B40 /* OrderedCollections in Frameworks */ = {isa = PBXBuildFile; productRef = 37C65E662A23936D00314B40 /* OrderedCollections */; };
+		37C65E6A2A2393A500314B40 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 37C65E692A2393A500314B40 /* ComposableArchitecture */; };
+		37C65E6D2A2393D100314B40 /* CustomDump in Frameworks */ = {isa = PBXBuildFile; productRef = 37C65E6C2A2393D100314B40 /* CustomDump */; };
+		37C65E702A2393F500314B40 /* IdentifiedCollections in Frameworks */ = {isa = PBXBuildFile; productRef = 37C65E6F2A2393F500314B40 /* IdentifiedCollections */; };
+		37C65E732A23941400314B40 /* XCTestDynamicOverlay in Frameworks */ = {isa = PBXBuildFile; productRef = 37C65E722A23941400314B40 /* XCTestDynamicOverlay */; };
+		37D71C5D2A24DDD8000DAD75 /* GameView2048.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D71C5B2A24DDD7000DAD75 /* GameView2048.swift */; };
+		37D71C5F2A251C33000DAD75 /* GameLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D71C5E2A251C33000DAD75 /* GameLogic.swift */; };
+		37D71C612A251C4E000DAD75 /* BlockGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D71C602A251C4D000DAD75 /* BlockGridView.swift */; };
+		37D71C632A251C8B000DAD75 /* BlockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D71C622A251C8B000DAD75 /* BlockView.swift */; };
+		37D71C672A251C9B000DAD75 /* IdentifiedBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D71C642A251C9A000DAD75 /* IdentifiedBlock.swift */; };
+		37D71C682A251C9B000DAD75 /* BlockMatrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D71C652A251C9A000DAD75 /* BlockMatrix.swift */; };
+		37D71C6C2A251CA8000DAD75 /* FunctionalUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D71C6A2A251CA7000DAD75 /* FunctionalUtils.swift */; };
+		37D71C6D2A251CA8000DAD75 /* SwiftUIExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D71C6B2A251CA7000DAD75 /* SwiftUIExtensions.swift */; };
+		37D71C6F2A252085000DAD75 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D71C6E2A252085000DAD75 /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,9 +88,30 @@
 		3749D3F72A1AE278009FD1E7 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
 		3749D3F92A1AE8A1009FD1E7 /* ShareView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareView.swift; sourceTree = "<group>"; };
 		37C65E322A21A22C00314B40 /* GameItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameItem.swift; sourceTree = "<group>"; };
-		37C65E342A21A3D300314B40 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		37C65E342A21A3D300314B40 /* XGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XGameView.swift; sourceTree = "<group>"; };
 		37C65E362A21ADE300314B40 /* animations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = animations.swift; sourceTree = "<group>"; };
 		37C65E382A22187600314B40 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		37C65E3D2A23909500314B40 /* AppState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		37C65E3E2A23909500314B40 /* GameView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		37C65E3F2A23909500314B40 /* Words.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Words.swift; sourceTree = "<group>"; };
+		37C65E422A23909500314B40 /* wordle-allowed-guesses_en.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "wordle-allowed-guesses_en.txt"; sourceTree = "<group>"; };
+		37C65E432A23909500314B40 /* wordle-answers-alphabetical_en.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "wordle-answers-alphabetical_en.txt"; sourceTree = "<group>"; };
+		37C65E452A23909500314B40 /* wordle-answers-alphabetical_fr.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "wordle-answers-alphabetical_fr.txt"; sourceTree = "<group>"; };
+		37C65E462A23909500314B40 /* wordle-allowed-guesses_fr.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "wordle-allowed-guesses_fr.txt"; sourceTree = "<group>"; };
+		37C65E482A23909500314B40 /* WordleApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordleApp.swift; sourceTree = "<group>"; };
+		37C65E4A2A23909500314B40 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		37C65E4B2A23909500314B40 /* KeyboardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardView.swift; sourceTree = "<group>"; };
+		37C65E4C2A23909500314B40 /* Models.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		37C65E4D2A23909500314B40 /* GameOverView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameOverView.swift; sourceTree = "<group>"; };
+		37D71C5B2A24DDD7000DAD75 /* GameView2048.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameView2048.swift; sourceTree = "<group>"; };
+		37D71C5E2A251C33000DAD75 /* GameLogic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameLogic.swift; sourceTree = "<group>"; };
+		37D71C602A251C4D000DAD75 /* BlockGridView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlockGridView.swift; sourceTree = "<group>"; };
+		37D71C622A251C8B000DAD75 /* BlockView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlockView.swift; sourceTree = "<group>"; };
+		37D71C642A251C9A000DAD75 /* IdentifiedBlock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IdentifiedBlock.swift; sourceTree = "<group>"; };
+		37D71C652A251C9A000DAD75 /* BlockMatrix.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlockMatrix.swift; sourceTree = "<group>"; };
+		37D71C6A2A251CA7000DAD75 /* FunctionalUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunctionalUtils.swift; sourceTree = "<group>"; };
+		37D71C6B2A251CA7000DAD75 /* SwiftUIExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftUIExtensions.swift; sourceTree = "<group>"; };
+		37D71C6E2A252085000DAD75 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +119,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37C65E672A23936D00314B40 /* OrderedCollections in Frameworks */,
+				37C65E702A2393F500314B40 /* IdentifiedCollections in Frameworks */,
+				37C65E632A23936D00314B40 /* Collections in Frameworks */,
+				37C65E6A2A2393A500314B40 /* ComposableArchitecture in Frameworks */,
+				37C65E6D2A2393D100314B40 /* CustomDump in Frameworks */,
+				37C65E652A23936D00314B40 /* DequeModule in Frameworks */,
+				37C65E5D2A23930500314B40 /* CombineSchedulers in Frameworks */,
+				37C65E732A23941400314B40 /* XCTestDynamicOverlay in Frameworks */,
+				37C65E602A23933900314B40 /* CasePaths in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,7 +153,7 @@
 				3749D3F92A1AE8A1009FD1E7 /* ShareView.swift */,
 				3749D3F72A1AE278009FD1E7 /* CalendarView.swift */,
 				373A6FC82A1D9829006924AC /* MatchedView.swift */,
-				37C65E342A21A3D300314B40 /* GameView.swift */,
+				37C65E342A21A3D300314B40 /* XGameView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -157,6 +217,8 @@
 		3749D3C92A1AB9A5009FD1E7 /* platiciti_redesign */ = {
 			isa = PBXGroup;
 			children = (
+				37D71C572A24DD21000DAD75 /* Game2048 */,
+				37C65E3C2A23909500314B40 /* Wordle */,
 				3749D3D02A1AB9AB009FD1E7 /* Preview Content */,
 				3749D3CE2A1AB9AB009FD1E7 /* Assets.xcassets */,
 				3749D3CA2A1AB9A5009FD1E7 /* platiciti_redesignApp.swift */,
@@ -178,6 +240,73 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		37C65E3C2A23909500314B40 /* Wordle */ = {
+			isa = PBXGroup;
+			children = (
+				37C65E3D2A23909500314B40 /* AppState.swift */,
+				37C65E3E2A23909500314B40 /* GameView.swift */,
+				37C65E3F2A23909500314B40 /* Words.swift */,
+				37C65E402A23909500314B40 /* Resources */,
+				37C65E482A23909500314B40 /* WordleApp.swift */,
+				37C65E492A23909500314B40 /* Preview Content */,
+				37C65E4B2A23909500314B40 /* KeyboardView.swift */,
+				37C65E4C2A23909500314B40 /* Models.swift */,
+				37C65E4D2A23909500314B40 /* GameOverView.swift */,
+			);
+			path = Wordle;
+			sourceTree = "<group>";
+		};
+		37C65E402A23909500314B40 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				37C65E412A23909500314B40 /* English */,
+				37C65E442A23909500314B40 /* French */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		37C65E412A23909500314B40 /* English */ = {
+			isa = PBXGroup;
+			children = (
+				37C65E422A23909500314B40 /* wordle-allowed-guesses_en.txt */,
+				37C65E432A23909500314B40 /* wordle-answers-alphabetical_en.txt */,
+			);
+			path = English;
+			sourceTree = "<group>";
+		};
+		37C65E442A23909500314B40 /* French */ = {
+			isa = PBXGroup;
+			children = (
+				37C65E452A23909500314B40 /* wordle-answers-alphabetical_fr.txt */,
+				37C65E462A23909500314B40 /* wordle-allowed-guesses_fr.txt */,
+			);
+			path = French;
+			sourceTree = "<group>";
+		};
+		37C65E492A23909500314B40 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				37C65E4A2A23909500314B40 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		37D71C572A24DD21000DAD75 /* Game2048 */ = {
+			isa = PBXGroup;
+			children = (
+				37D71C5B2A24DDD7000DAD75 /* GameView2048.swift */,
+				37D71C6E2A252085000DAD75 /* AppDelegate.swift */,
+				37D71C6A2A251CA7000DAD75 /* FunctionalUtils.swift */,
+				37D71C6B2A251CA7000DAD75 /* SwiftUIExtensions.swift */,
+				37D71C652A251C9A000DAD75 /* BlockMatrix.swift */,
+				37D71C642A251C9A000DAD75 /* IdentifiedBlock.swift */,
+				37D71C5E2A251C33000DAD75 /* GameLogic.swift */,
+				37D71C602A251C4D000DAD75 /* BlockGridView.swift */,
+				37D71C622A251C8B000DAD75 /* BlockView.swift */,
+			);
+			path = Game2048;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -194,6 +323,17 @@
 			dependencies = (
 			);
 			name = platiciti_redesign;
+			packageProductDependencies = (
+				37C65E5C2A23930500314B40 /* CombineSchedulers */,
+				37C65E5F2A23933900314B40 /* CasePaths */,
+				37C65E622A23936D00314B40 /* Collections */,
+				37C65E642A23936D00314B40 /* DequeModule */,
+				37C65E662A23936D00314B40 /* OrderedCollections */,
+				37C65E692A2393A500314B40 /* ComposableArchitecture */,
+				37C65E6C2A2393D100314B40 /* CustomDump */,
+				37C65E6F2A2393F500314B40 /* IdentifiedCollections */,
+				37C65E722A23941400314B40 /* XCTestDynamicOverlay */,
+			);
 			productName = platiciti_redesign;
 			productReference = 3749D3C72A1AB9A5009FD1E7 /* platiciti_redesign.app */;
 			productType = "com.apple.product-type.application";
@@ -222,6 +362,15 @@
 				Base,
 			);
 			mainGroup = 3749D3BE2A1AB9A5009FD1E7;
+			packageReferences = (
+				37C65E5B2A23930500314B40 /* XCRemoteSwiftPackageReference "combine-schedulers" */,
+				37C65E5E2A23933900314B40 /* XCRemoteSwiftPackageReference "swift-case-paths" */,
+				37C65E612A23936D00314B40 /* XCRemoteSwiftPackageReference "swift-collections" */,
+				37C65E682A2393A500314B40 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+				37C65E6B2A2393D100314B40 /* XCRemoteSwiftPackageReference "swift-custom-dump" */,
+				37C65E6E2A2393F500314B40 /* XCRemoteSwiftPackageReference "swift-identified-collections" */,
+				37C65E712A23941400314B40 /* XCRemoteSwiftPackageReference "xctest-dynamic-overlay" */,
+			);
 			productRefGroup = 3749D3C82A1AB9A5009FD1E7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -236,7 +385,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37C65E572A23909500314B40 /* Preview Assets.xcassets in Resources */,
+				37C65E542A23909500314B40 /* wordle-allowed-guesses_fr.txt in Resources */,
 				3749D3D22A1AB9AB009FD1E7 /* Preview Assets.xcassets in Resources */,
+				37C65E512A23909500314B40 /* wordle-allowed-guesses_en.txt in Resources */,
+				37C65E522A23909500314B40 /* wordle-answers-alphabetical_en.txt in Resources */,
+				37C65E532A23909500314B40 /* wordle-answers-alphabetical_fr.txt in Resources */,
 				3749D3CF2A1AB9AB009FD1E7 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -248,28 +402,44 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37D71C632A251C8B000DAD75 /* BlockView.swift in Sources */,
 				373A6FC72A1D89D7006924AC /* Game.swift in Sources */,
+				37D71C672A251C9B000DAD75 /* IdentifiedBlock.swift in Sources */,
 				371FDBC12A1B0B5F0050C353 /* LaunchScreenStep.swift in Sources */,
 				37C65E332A21A22C00314B40 /* GameItem.swift in Sources */,
+				37C65E4E2A23909500314B40 /* AppState.swift in Sources */,
 				371FDBC72A1B0CCA0050C353 /* ContentView.swift in Sources */,
 				373A6FBB2A1D43F4006924AC /* Styles.swift in Sources */,
 				3749D3FA2A1AE8A1009FD1E7 /* ShareView.swift in Sources */,
 				373A6FBF2A1D4835006924AC /* FeaturedItem.swift in Sources */,
 				373A6FC12A1D4A85006924AC /* NavigationBar.swift in Sources */,
+				37C65E582A23909500314B40 /* KeyboardView.swift in Sources */,
+				37C65E5A2A23909500314B40 /* GameOverView.swift in Sources */,
 				3749D3F82A1AE278009FD1E7 /* CalendarView.swift in Sources */,
 				3749D3F22A1AE1C6009FD1E7 /* HomeView.swift in Sources */,
 				373A6FC52A1D6259006924AC /* AnimatableFontModifier.swift in Sources */,
+				37D71C6C2A251CA8000DAD75 /* FunctionalUtils.swift in Sources */,
 				371FDBC52A1B0C1D0050C353 /* LaunchScreenView.swift in Sources */,
 				371FDBC32A1B0BA70050C353 /* LaunchScreenStateManager.swift in Sources */,
-				37C65E352A21A3D300314B40 /* GameView.swift in Sources */,
+				37C65E4F2A23909500314B40 /* GameView.swift in Sources */,
+				37C65E352A21A3D300314B40 /* XGameView.swift in Sources */,
+				37D71C6F2A252085000DAD75 /* AppDelegate.swift in Sources */,
+				37D71C5F2A251C33000DAD75 /* GameLogic.swift in Sources */,
 				37C65E392A22187600314B40 /* Model.swift in Sources */,
+				37C65E562A23909500314B40 /* WordleApp.swift in Sources */,
 				37C65E372A21ADE300314B40 /* animations.swift in Sources */,
 				373A6FC32A1D593F006924AC /* PreferenceKeys.swift in Sources */,
 				371FDBCB2A1C10850050C353 /* TabBar.swift in Sources */,
+				37D71C6D2A251CA8000DAD75 /* SwiftUIExtensions.swift in Sources */,
 				3749D3CB2A1AB9A5009FD1E7 /* platiciti_redesignApp.swift in Sources */,
 				3749D3F62A1AE240009FD1E7 /* iMessageView.swift in Sources */,
 				373A6FC92A1D9829006924AC /* MatchedView.swift in Sources */,
+				37D71C612A251C4E000DAD75 /* BlockGridView.swift in Sources */,
+				37C65E502A23909500314B40 /* Words.swift in Sources */,
+				37C65E592A23909500314B40 /* Models.swift in Sources */,
+				37D71C682A251C9B000DAD75 /* BlockMatrix.swift in Sources */,
 				371FDBCD2A1C19DA0050C353 /* Tab.swift in Sources */,
+				37D71C5D2A24DDD8000DAD75 /* GameView2048.swift in Sources */,
 				373A6FCB2A1DA6AB006924AC /* GameCenterView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -471,6 +641,113 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		37C65E5B2A23930500314B40 /* XCRemoteSwiftPackageReference "combine-schedulers" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/combine-schedulers";
+			requirement = {
+				kind = exactVersion;
+				version = 0.5.3;
+			};
+		};
+		37C65E5E2A23933900314B40 /* XCRemoteSwiftPackageReference "swift-case-paths" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-case-paths";
+			requirement = {
+				kind = exactVersion;
+				version = 0.8.0;
+			};
+		};
+		37C65E612A23936D00314B40 /* XCRemoteSwiftPackageReference "swift-collections" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-collections.git";
+			requirement = {
+				kind = exactVersion;
+				version = 1.0.2;
+			};
+		};
+		37C65E682A2393A500314B40 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.9.0;
+			};
+		};
+		37C65E6B2A2393D100314B40 /* XCRemoteSwiftPackageReference "swift-custom-dump" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-custom-dump";
+			requirement = {
+				kind = exactVersion;
+				version = 0.3.0;
+			};
+		};
+		37C65E6E2A2393F500314B40 /* XCRemoteSwiftPackageReference "swift-identified-collections" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-identified-collections";
+			requirement = {
+				kind = exactVersion;
+				version = 0.3.2;
+			};
+		};
+		37C65E712A23941400314B40 /* XCRemoteSwiftPackageReference "xctest-dynamic-overlay" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/xctest-dynamic-overlay";
+			requirement = {
+				kind = exactVersion;
+				version = 0.2.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		37C65E5C2A23930500314B40 /* CombineSchedulers */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 37C65E5B2A23930500314B40 /* XCRemoteSwiftPackageReference "combine-schedulers" */;
+			productName = CombineSchedulers;
+		};
+		37C65E5F2A23933900314B40 /* CasePaths */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 37C65E5E2A23933900314B40 /* XCRemoteSwiftPackageReference "swift-case-paths" */;
+			productName = CasePaths;
+		};
+		37C65E622A23936D00314B40 /* Collections */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 37C65E612A23936D00314B40 /* XCRemoteSwiftPackageReference "swift-collections" */;
+			productName = Collections;
+		};
+		37C65E642A23936D00314B40 /* DequeModule */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 37C65E612A23936D00314B40 /* XCRemoteSwiftPackageReference "swift-collections" */;
+			productName = DequeModule;
+		};
+		37C65E662A23936D00314B40 /* OrderedCollections */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 37C65E612A23936D00314B40 /* XCRemoteSwiftPackageReference "swift-collections" */;
+			productName = OrderedCollections;
+		};
+		37C65E692A2393A500314B40 /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 37C65E682A2393A500314B40 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+		37C65E6C2A2393D100314B40 /* CustomDump */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 37C65E6B2A2393D100314B40 /* XCRemoteSwiftPackageReference "swift-custom-dump" */;
+			productName = CustomDump;
+		};
+		37C65E6F2A2393F500314B40 /* IdentifiedCollections */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 37C65E6E2A2393F500314B40 /* XCRemoteSwiftPackageReference "swift-identified-collections" */;
+			productName = IdentifiedCollections;
+		};
+		37C65E722A23941400314B40 /* XCTestDynamicOverlay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 37C65E712A23941400314B40 /* XCRemoteSwiftPackageReference "xctest-dynamic-overlay" */;
+			productName = XCTestDynamicOverlay;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3749D3BF2A1AB9A5009FD1E7 /* Project object */;
 }
