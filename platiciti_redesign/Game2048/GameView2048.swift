@@ -31,6 +31,8 @@ struct GameView2048 : View {
     
     @EnvironmentObject var gameLogic: GameLogic
     
+    private let resetPublisher = EventPublisher()
+    
     fileprivate struct LayoutTraits {
         let bannerOffset: CGSize
         let showsBanner: Bool
@@ -98,51 +100,61 @@ struct GameView2048 : View {
     }
     
     var content: some View {
-        GeometryReader { proxy in
-            bind(self.layoutTraits(for: proxy)) { layoutTraits in
-                VStack {
-                    
-                    ZStack(alignment: layoutTraits.containerAlignment) {
-//                        if layoutTraits.showsBanner {
-//                            Text("")
-//                                .font(Font.system(size: 48).weight(.black))
-//                                .foregroundColor(.white)
-//                                .offset(layoutTraits.bannerOffset)
-//                        }
+      
+            GeometryReader { proxy in
+                bind(self.layoutTraits(for: proxy)) { layoutTraits in
+                    VStack {
                         
-                        ZStack(alignment: .center) {
-                            BlockGridView(matrix:  gameLogic.blockMatrix,
-                                          blockEnterEdge: .from(gameLogic.lastGestureDirection))
+                        ZStack(alignment: layoutTraits.containerAlignment) {
+                            //                        if layoutTraits.showsBanner {
+                            //                            Text("")
+                            //                                .font(Font.system(size: 48).weight(.black))
+                            //                                .foregroundColor(.white)
+                            //                                .offset(layoutTraits.bannerOffset)
+                            //                        }
+                            
+                            ZStack(alignment: .center) {
+                                BlockGridView(matrix:  gameLogic.blockMatrix,
+                                              blockEnterEdge: .from(gameLogic.lastGestureDirection))
+                            }
+                            .frame(width: proxy.size.width, height: proxy.size.height, alignment: .top)
+                            //
                         }
-                        .frame(width: proxy.size.width, height: proxy.size.height, alignment: .top)
-//
+                        .frame(width: proxy.size.width, height: proxy.size.width, alignment: .top)
+                        
+                        //                    Spacer()
+                        //                    Button {
+                        //                        gameLogic.newGame()
+                        //                    } label: {
+                        //                        Image(systemName: "xmark")
+                        //                            .font(.body.weight(.bold))
+                        //                            .foregroundColor(.secondary)
+                        //                            .padding(8)
+                        //                            .background(.ultraThinMaterial, in: Circle())
+                        //                    }
+                        //                    .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topTrailing)
+                        //                    .padding(20)
+                        //                    .ignoresSafeArea()
+                        //                    Spacer()
+                        Spacer()
+                        HStack {
+                            RestartButton(resetPublisher: resetPublisher)
+//                            SwitchGameModeButton(resetPublisher: resetPublisher)
+                            DifficultyMenu()
+                        }
+                        Spacer()
+//                        .padding(.vertical, 60)
                     }
-                    .frame(width: proxy.size.width, height: proxy.size.height, alignment: .center)
-                    
-                    Spacer()
-                    Button {
-                        gameLogic.newGame()
-                    } label: {
-                        Image(systemName: "xmark")
-                            .font(.body.weight(.bold))
-                            .foregroundColor(.secondary)
-                            .padding(8)
-                            .background(.ultraThinMaterial, in: Circle())
-                    }
-                    .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topTrailing)
-                    .padding(20)
-                    .ignoresSafeArea()
-                    Spacer()
+                    .padding(.vertical, 60)
+                    .background(
+                        Color("Background")
+    //                    Rectangle()
+    //                        .fill(.blue.gradient)
+    //                        .edgesIgnoringSafeArea(.all)
+                    )
                 }
-                .padding(.vertical, 40)
-                .background(
-                    Color("Background")
-//                    Rectangle()
-//                        .fill(.blue.gradient)
-//                        .edgesIgnoringSafeArea(.all)
-                )
             }
-        }
+        
     }
     
      

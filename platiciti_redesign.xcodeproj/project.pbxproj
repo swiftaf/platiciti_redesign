@@ -13,6 +13,7 @@
 		371FDBC72A1B0CCA0050C353 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371FDBC62A1B0CCA0050C353 /* ContentView.swift */; };
 		371FDBCB2A1C10850050C353 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371FDBCA2A1C10850050C353 /* TabBar.swift */; };
 		371FDBCD2A1C19DA0050C353 /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371FDBCC2A1C19DA0050C353 /* Tab.swift */; };
+		37244D292A26B1B2002CF419 /* Extension+View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37244D282A26B1B2002CF419 /* Extension+View.swift */; };
 		373A6FBB2A1D43F4006924AC /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373A6FBA2A1D43F4006924AC /* Styles.swift */; };
 		373A6FBF2A1D4835006924AC /* FeaturedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373A6FBE2A1D4835006924AC /* FeaturedItem.swift */; };
 		373A6FC12A1D4A85006924AC /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373A6FC02A1D4A85006924AC /* NavigationBar.swift */; };
@@ -21,6 +22,37 @@
 		373A6FC72A1D89D7006924AC /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373A6FC62A1D89D7006924AC /* Game.swift */; };
 		373A6FC92A1D9829006924AC /* MatchedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373A6FC82A1D9829006924AC /* MatchedView.swift */; };
 		373A6FCB2A1DA6AB006924AC /* GameCenterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373A6FCA2A1DA6AB006924AC /* GameCenterView.swift */; };
+		374914F72A26239B00E6EEEB /* TicTacToe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374914D92A26239900E6EEEB /* TicTacToe.swift */; };
+		374914F92A26239B00E6EEEB /* Collection + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374914DB2A26239900E6EEEB /* Collection + Extensions.swift */; };
+		374914FA2A26239B00E6EEEB /* TicTacToeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374914DD2A26239900E6EEEB /* TicTacToeApp.swift */; };
+		374914FB2A26239B00E6EEEB /* GridButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374914DF2A26239900E6EEEB /* GridButton.swift */; };
+		374914FC2A26239B00E6EEEB /* TicTacToeGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374914E02A26239900E6EEEB /* TicTacToeGrid.swift */; };
+		374914FD2A26239B00E6EEEB /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374914E12A26239900E6EEEB /* PlayerView.swift */; };
+		374914FE2A26239B00E6EEEB /* Controls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374914E22A26239900E6EEEB /* Controls.swift */; };
+		374914FF2A26239B00E6EEEB /* GridLines.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374914E32A26239900E6EEEB /* GridLines.swift */; };
+		374915002A26239B00E6EEEB /* ContentViewTTT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374914E42A26239900E6EEEB /* ContentViewTTT.swift */; };
+		374915012A26239B00E6EEEB /* Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374914E52A26239900E6EEEB /* Appearance.swift */; };
+		374915282A26439200E6EEEB /* words-5.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3749150A2A26438F00E6EEEB /* words-5.txt */; };
+		374915292A26439200E6EEEB /* common-words-5.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3749150B2A26438F00E6EEEB /* common-words-5.txt */; };
+		3749152B2A26439200E6EEEB /* ContentViewWordley.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3749150D2A26439000E6EEEB /* ContentViewWordley.swift */; };
+		3749152C2A26439200E6EEEB /* CurrentGuessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3749150F2A26439000E6EEEB /* CurrentGuessView.swift */; };
+		3749152D2A26439200E6EEEB /* ActionBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374915102A26439000E6EEEB /* ActionBarView.swift */; };
+		3749152E2A26439200E6EEEB /* EmptyBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374915112A26439000E6EEEB /* EmptyBoxView.swift */; };
+		3749152F2A26439200E6EEEB /* GameResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374915122A26439000E6EEEB /* GameResultView.swift */; };
+		374915302A26439200E6EEEB /* GuessBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374915132A26439000E6EEEB /* GuessBoxView.swift */; };
+		374915312A26439200E6EEEB /* GameBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374915142A26439000E6EEEB /* GameBoardView.swift */; };
+		374915332A26439200E6EEEB /* GameStatistics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374915172A26439000E6EEEB /* GameStatistics.swift */; };
+		374915342A26439200E6EEEB /* Guess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374915182A26439000E6EEEB /* Guess.swift */; };
+		374915352A26439200E6EEEB /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374915192A26439000E6EEEB /* Dictionary.swift */; };
+		374915362A26439200E6EEEB /* GuessingGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3749151A2A26439000E6EEEB /* GuessingGame.swift */; };
+		374915372A26439200E6EEEB /* GuessedLetter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3749151B2A26439000E6EEEB /* GuessedLetter.swift */; };
+		374915392A26439200E6EEEB /* KeyboardViewWordley.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3749151E2A26439100E6EEEB /* KeyboardViewWordley.swift */; };
+		3749153A2A26439200E6EEEB /* KeyButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3749151F2A26439100E6EEEB /* KeyButtonView.swift */; };
+		3749153B2A26439200E6EEEB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 374915212A26439100E6EEEB /* Preview Assets.xcassets */; };
+		3749153D2A26439200E6EEEB /* StatisticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374915242A26439200E6EEEB /* StatisticsView.swift */; };
+		3749153E2A26439200E6EEEB /* ShowResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374915252A26439200E6EEEB /* ShowResultView.swift */; };
+		3749153F2A26439200E6EEEB /* ResultsSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374915262A26439200E6EEEB /* ResultsSummaryView.swift */; };
+		374915402A26439200E6EEEB /* ActivitySheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374915272A26439200E6EEEB /* ActivitySheetView.swift */; };
 		3749D3CB2A1AB9A5009FD1E7 /* platiciti_redesignApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3749D3CA2A1AB9A5009FD1E7 /* platiciti_redesignApp.swift */; };
 		3749D3CF2A1AB9AB009FD1E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3749D3CE2A1AB9AB009FD1E7 /* Assets.xcassets */; };
 		3749D3D22A1AB9AB009FD1E7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3749D3D12A1AB9AB009FD1E7 /* Preview Assets.xcassets */; };
@@ -61,7 +93,6 @@
 		37D71C682A251C9B000DAD75 /* BlockMatrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D71C652A251C9A000DAD75 /* BlockMatrix.swift */; };
 		37D71C6C2A251CA8000DAD75 /* FunctionalUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D71C6A2A251CA7000DAD75 /* FunctionalUtils.swift */; };
 		37D71C6D2A251CA8000DAD75 /* SwiftUIExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D71C6B2A251CA7000DAD75 /* SwiftUIExtensions.swift */; };
-		37D71C6F2A252085000DAD75 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D71C6E2A252085000DAD75 /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -71,6 +102,7 @@
 		371FDBC62A1B0CCA0050C353 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		371FDBCA2A1C10850050C353 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		371FDBCC2A1C19DA0050C353 /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
+		37244D282A26B1B2002CF419 /* Extension+View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+View.swift"; sourceTree = "<group>"; };
 		373A6FBA2A1D43F4006924AC /* Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Styles.swift; sourceTree = "<group>"; };
 		373A6FBE2A1D4835006924AC /* FeaturedItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedItem.swift; sourceTree = "<group>"; };
 		373A6FC02A1D4A85006924AC /* NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
@@ -79,6 +111,37 @@
 		373A6FC62A1D89D7006924AC /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		373A6FC82A1D9829006924AC /* MatchedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchedView.swift; sourceTree = "<group>"; };
 		373A6FCA2A1DA6AB006924AC /* GameCenterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCenterView.swift; sourceTree = "<group>"; };
+		374914D92A26239900E6EEEB /* TicTacToe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicTacToe.swift; sourceTree = "<group>"; };
+		374914DB2A26239900E6EEEB /* Collection + Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Collection + Extensions.swift"; sourceTree = "<group>"; };
+		374914DD2A26239900E6EEEB /* TicTacToeApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicTacToeApp.swift; sourceTree = "<group>"; };
+		374914DF2A26239900E6EEEB /* GridButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridButton.swift; sourceTree = "<group>"; };
+		374914E02A26239900E6EEEB /* TicTacToeGrid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicTacToeGrid.swift; sourceTree = "<group>"; };
+		374914E12A26239900E6EEEB /* PlayerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
+		374914E22A26239900E6EEEB /* Controls.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Controls.swift; sourceTree = "<group>"; };
+		374914E32A26239900E6EEEB /* GridLines.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridLines.swift; sourceTree = "<group>"; };
+		374914E42A26239900E6EEEB /* ContentViewTTT.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentViewTTT.swift; sourceTree = "<group>"; };
+		374914E52A26239900E6EEEB /* Appearance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Appearance.swift; sourceTree = "<group>"; };
+		3749150A2A26438F00E6EEEB /* words-5.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "words-5.txt"; sourceTree = "<group>"; };
+		3749150B2A26438F00E6EEEB /* common-words-5.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "common-words-5.txt"; sourceTree = "<group>"; };
+		3749150D2A26439000E6EEEB /* ContentViewWordley.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentViewWordley.swift; sourceTree = "<group>"; };
+		3749150F2A26439000E6EEEB /* CurrentGuessView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentGuessView.swift; sourceTree = "<group>"; };
+		374915102A26439000E6EEEB /* ActionBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionBarView.swift; sourceTree = "<group>"; };
+		374915112A26439000E6EEEB /* EmptyBoxView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyBoxView.swift; sourceTree = "<group>"; };
+		374915122A26439000E6EEEB /* GameResultView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameResultView.swift; sourceTree = "<group>"; };
+		374915132A26439000E6EEEB /* GuessBoxView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuessBoxView.swift; sourceTree = "<group>"; };
+		374915142A26439000E6EEEB /* GameBoardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameBoardView.swift; sourceTree = "<group>"; };
+		374915172A26439000E6EEEB /* GameStatistics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameStatistics.swift; sourceTree = "<group>"; };
+		374915182A26439000E6EEEB /* Guess.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Guess.swift; sourceTree = "<group>"; };
+		374915192A26439000E6EEEB /* Dictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dictionary.swift; sourceTree = "<group>"; };
+		3749151A2A26439000E6EEEB /* GuessingGame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuessingGame.swift; sourceTree = "<group>"; };
+		3749151B2A26439000E6EEEB /* GuessedLetter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuessedLetter.swift; sourceTree = "<group>"; };
+		3749151E2A26439100E6EEEB /* KeyboardViewWordley.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardViewWordley.swift; sourceTree = "<group>"; };
+		3749151F2A26439100E6EEEB /* KeyButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyButtonView.swift; sourceTree = "<group>"; };
+		374915212A26439100E6EEEB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		374915242A26439200E6EEEB /* StatisticsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatisticsView.swift; sourceTree = "<group>"; };
+		374915252A26439200E6EEEB /* ShowResultView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowResultView.swift; sourceTree = "<group>"; };
+		374915262A26439200E6EEEB /* ResultsSummaryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsSummaryView.swift; sourceTree = "<group>"; };
+		374915272A26439200E6EEEB /* ActivitySheetView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivitySheetView.swift; sourceTree = "<group>"; };
 		3749D3C72A1AB9A5009FD1E7 /* platiciti_redesign.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = platiciti_redesign.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3749D3CA2A1AB9A5009FD1E7 /* platiciti_redesignApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = platiciti_redesignApp.swift; sourceTree = "<group>"; };
 		3749D3CE2A1AB9AB009FD1E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -111,7 +174,6 @@
 		37D71C652A251C9A000DAD75 /* BlockMatrix.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlockMatrix.swift; sourceTree = "<group>"; };
 		37D71C6A2A251CA7000DAD75 /* FunctionalUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunctionalUtils.swift; sourceTree = "<group>"; };
 		37D71C6B2A251CA7000DAD75 /* SwiftUIExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftUIExtensions.swift; sourceTree = "<group>"; };
-		37D71C6E2A252085000DAD75 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +196,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		37244D272A26B186002CF419 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				37244D282A26B1B2002CF419 /* Extension+View.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		373A6FB62A1D413D006924AC /* Navigation */ = {
 			isa = PBXGroup;
 			children = (
@@ -198,6 +268,124 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
+		374914CB2A26236D00E6EEEB /* GameTTT */ = {
+			isa = PBXGroup;
+			children = (
+				374914D82A26239900E6EEEB /* Shared */,
+			);
+			path = GameTTT;
+			sourceTree = "<group>";
+		};
+		374914D82A26239900E6EEEB /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				374914D92A26239900E6EEEB /* TicTacToe.swift */,
+				374914DB2A26239900E6EEEB /* Collection + Extensions.swift */,
+				374914DC2A26239900E6EEEB /* Model */,
+				374914DD2A26239900E6EEEB /* TicTacToeApp.swift */,
+				374914DE2A26239900E6EEEB /* Views */,
+				374914E52A26239900E6EEEB /* Appearance.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		374914DC2A26239900E6EEEB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		374914DE2A26239900E6EEEB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				374914DF2A26239900E6EEEB /* GridButton.swift */,
+				374914E02A26239900E6EEEB /* TicTacToeGrid.swift */,
+				374914E12A26239900E6EEEB /* PlayerView.swift */,
+				374914E22A26239900E6EEEB /* Controls.swift */,
+				374914E32A26239900E6EEEB /* GridLines.swift */,
+				374914E42A26239900E6EEEB /* ContentViewTTT.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		374915082A26436D00E6EEEB /* GameWordle */ = {
+			isa = PBXGroup;
+			children = (
+				37244D272A26B186002CF419 /* Helpers */,
+				3749150D2A26439000E6EEEB /* ContentViewWordley.swift */,
+				3749150E2A26439000E6EEEB /* GameBoardViews */,
+				3749151D2A26439100E6EEEB /* KeyboardViews */,
+				374915162A26439000E6EEEB /* Models */,
+				374915202A26439100E6EEEB /* Preview Content */,
+				374915092A26438F00E6EEEB /* Resources */,
+				374915232A26439200E6EEEB /* ResultsViews */,
+			);
+			path = GameWordle;
+			sourceTree = "<group>";
+		};
+		374915092A26438F00E6EEEB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3749150A2A26438F00E6EEEB /* words-5.txt */,
+				3749150B2A26438F00E6EEEB /* common-words-5.txt */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		3749150E2A26439000E6EEEB /* GameBoardViews */ = {
+			isa = PBXGroup;
+			children = (
+				3749150F2A26439000E6EEEB /* CurrentGuessView.swift */,
+				374915102A26439000E6EEEB /* ActionBarView.swift */,
+				374915112A26439000E6EEEB /* EmptyBoxView.swift */,
+				374915122A26439000E6EEEB /* GameResultView.swift */,
+				374915132A26439000E6EEEB /* GuessBoxView.swift */,
+				374915142A26439000E6EEEB /* GameBoardView.swift */,
+			);
+			path = GameBoardViews;
+			sourceTree = "<group>";
+		};
+		374915162A26439000E6EEEB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				374915172A26439000E6EEEB /* GameStatistics.swift */,
+				374915182A26439000E6EEEB /* Guess.swift */,
+				374915192A26439000E6EEEB /* Dictionary.swift */,
+				3749151A2A26439000E6EEEB /* GuessingGame.swift */,
+				3749151B2A26439000E6EEEB /* GuessedLetter.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3749151D2A26439100E6EEEB /* KeyboardViews */ = {
+			isa = PBXGroup;
+			children = (
+				3749151E2A26439100E6EEEB /* KeyboardViewWordley.swift */,
+				3749151F2A26439100E6EEEB /* KeyButtonView.swift */,
+			);
+			path = KeyboardViews;
+			sourceTree = "<group>";
+		};
+		374915202A26439100E6EEEB /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				374915212A26439100E6EEEB /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		374915232A26439200E6EEEB /* ResultsViews */ = {
+			isa = PBXGroup;
+			children = (
+				374915242A26439200E6EEEB /* StatisticsView.swift */,
+				374915252A26439200E6EEEB /* ShowResultView.swift */,
+				374915262A26439200E6EEEB /* ResultsSummaryView.swift */,
+				374915272A26439200E6EEEB /* ActivitySheetView.swift */,
+			);
+			path = ResultsViews;
+			sourceTree = "<group>";
+		};
 		3749D3BE2A1AB9A5009FD1E7 = {
 			isa = PBXGroup;
 			children = (
@@ -217,6 +405,8 @@
 		3749D3C92A1AB9A5009FD1E7 /* platiciti_redesign */ = {
 			isa = PBXGroup;
 			children = (
+				374915082A26436D00E6EEEB /* GameWordle */,
+				374914CB2A26236D00E6EEEB /* GameTTT */,
 				37D71C572A24DD21000DAD75 /* Game2048 */,
 				37C65E3C2A23909500314B40 /* Wordle */,
 				3749D3D02A1AB9AB009FD1E7 /* Preview Content */,
@@ -295,7 +485,6 @@
 			isa = PBXGroup;
 			children = (
 				37D71C5B2A24DDD7000DAD75 /* GameView2048.swift */,
-				37D71C6E2A252085000DAD75 /* AppDelegate.swift */,
 				37D71C6A2A251CA7000DAD75 /* FunctionalUtils.swift */,
 				37D71C6B2A251CA7000DAD75 /* SwiftUIExtensions.swift */,
 				37D71C652A251C9A000DAD75 /* BlockMatrix.swift */,
@@ -387,6 +576,9 @@
 			files = (
 				37C65E572A23909500314B40 /* Preview Assets.xcassets in Resources */,
 				37C65E542A23909500314B40 /* wordle-allowed-guesses_fr.txt in Resources */,
+				374915292A26439200E6EEEB /* common-words-5.txt in Resources */,
+				374915282A26439200E6EEEB /* words-5.txt in Resources */,
+				3749153B2A26439200E6EEEB /* Preview Assets.xcassets in Resources */,
 				3749D3D22A1AB9AB009FD1E7 /* Preview Assets.xcassets in Resources */,
 				37C65E512A23909500314B40 /* wordle-allowed-guesses_en.txt in Resources */,
 				37C65E522A23909500314B40 /* wordle-answers-alphabetical_en.txt in Resources */,
@@ -403,41 +595,69 @@
 			buildActionMask = 2147483647;
 			files = (
 				37D71C632A251C8B000DAD75 /* BlockView.swift in Sources */,
+				374914FE2A26239B00E6EEEB /* Controls.swift in Sources */,
 				373A6FC72A1D89D7006924AC /* Game.swift in Sources */,
 				37D71C672A251C9B000DAD75 /* IdentifiedBlock.swift in Sources */,
 				371FDBC12A1B0B5F0050C353 /* LaunchScreenStep.swift in Sources */,
 				37C65E332A21A22C00314B40 /* GameItem.swift in Sources */,
+				374915372A26439200E6EEEB /* GuessedLetter.swift in Sources */,
 				37C65E4E2A23909500314B40 /* AppState.swift in Sources */,
 				371FDBC72A1B0CCA0050C353 /* ContentView.swift in Sources */,
+				374914FB2A26239B00E6EEEB /* GridButton.swift in Sources */,
+				3749152B2A26439200E6EEEB /* ContentViewWordley.swift in Sources */,
+				3749153E2A26439200E6EEEB /* ShowResultView.swift in Sources */,
+				374915002A26239B00E6EEEB /* ContentViewTTT.swift in Sources */,
 				373A6FBB2A1D43F4006924AC /* Styles.swift in Sources */,
+				3749152C2A26439200E6EEEB /* CurrentGuessView.swift in Sources */,
 				3749D3FA2A1AE8A1009FD1E7 /* ShareView.swift in Sources */,
 				373A6FBF2A1D4835006924AC /* FeaturedItem.swift in Sources */,
 				373A6FC12A1D4A85006924AC /* NavigationBar.swift in Sources */,
+				3749152E2A26439200E6EEEB /* EmptyBoxView.swift in Sources */,
+				3749152D2A26439200E6EEEB /* ActionBarView.swift in Sources */,
 				37C65E582A23909500314B40 /* KeyboardView.swift in Sources */,
 				37C65E5A2A23909500314B40 /* GameOverView.swift in Sources */,
 				3749D3F82A1AE278009FD1E7 /* CalendarView.swift in Sources */,
 				3749D3F22A1AE1C6009FD1E7 /* HomeView.swift in Sources */,
 				373A6FC52A1D6259006924AC /* AnimatableFontModifier.swift in Sources */,
+				374914FC2A26239B00E6EEEB /* TicTacToeGrid.swift in Sources */,
+				37244D292A26B1B2002CF419 /* Extension+View.swift in Sources */,
 				37D71C6C2A251CA8000DAD75 /* FunctionalUtils.swift in Sources */,
+				374914FA2A26239B00E6EEEB /* TicTacToeApp.swift in Sources */,
 				371FDBC52A1B0C1D0050C353 /* LaunchScreenView.swift in Sources */,
 				371FDBC32A1B0BA70050C353 /* LaunchScreenStateManager.swift in Sources */,
+				3749153A2A26439200E6EEEB /* KeyButtonView.swift in Sources */,
 				37C65E4F2A23909500314B40 /* GameView.swift in Sources */,
+				3749153F2A26439200E6EEEB /* ResultsSummaryView.swift in Sources */,
 				37C65E352A21A3D300314B40 /* XGameView.swift in Sources */,
-				37D71C6F2A252085000DAD75 /* AppDelegate.swift in Sources */,
+				374914F72A26239B00E6EEEB /* TicTacToe.swift in Sources */,
 				37D71C5F2A251C33000DAD75 /* GameLogic.swift in Sources */,
 				37C65E392A22187600314B40 /* Model.swift in Sources */,
+				374914F92A26239B00E6EEEB /* Collection + Extensions.swift in Sources */,
+				374915362A26439200E6EEEB /* GuessingGame.swift in Sources */,
 				37C65E562A23909500314B40 /* WordleApp.swift in Sources */,
 				37C65E372A21ADE300314B40 /* animations.swift in Sources */,
+				374915332A26439200E6EEEB /* GameStatistics.swift in Sources */,
+				374915312A26439200E6EEEB /* GameBoardView.swift in Sources */,
 				373A6FC32A1D593F006924AC /* PreferenceKeys.swift in Sources */,
 				371FDBCB2A1C10850050C353 /* TabBar.swift in Sources */,
 				37D71C6D2A251CA8000DAD75 /* SwiftUIExtensions.swift in Sources */,
+				374915392A26439200E6EEEB /* KeyboardViewWordley.swift in Sources */,
 				3749D3CB2A1AB9A5009FD1E7 /* platiciti_redesignApp.swift in Sources */,
 				3749D3F62A1AE240009FD1E7 /* iMessageView.swift in Sources */,
 				373A6FC92A1D9829006924AC /* MatchedView.swift in Sources */,
+				374915342A26439200E6EEEB /* Guess.swift in Sources */,
+				3749152F2A26439200E6EEEB /* GameResultView.swift in Sources */,
 				37D71C612A251C4E000DAD75 /* BlockGridView.swift in Sources */,
+				374915302A26439200E6EEEB /* GuessBoxView.swift in Sources */,
+				3749153D2A26439200E6EEEB /* StatisticsView.swift in Sources */,
 				37C65E502A23909500314B40 /* Words.swift in Sources */,
+				374915352A26439200E6EEEB /* Dictionary.swift in Sources */,
 				37C65E592A23909500314B40 /* Models.swift in Sources */,
 				37D71C682A251C9B000DAD75 /* BlockMatrix.swift in Sources */,
+				374914FD2A26239B00E6EEEB /* PlayerView.swift in Sources */,
+				374914FF2A26239B00E6EEEB /* GridLines.swift in Sources */,
+				374915402A26439200E6EEEB /* ActivitySheetView.swift in Sources */,
+				374915012A26239B00E6EEEB /* Appearance.swift in Sources */,
 				371FDBCD2A1C19DA0050C353 /* Tab.swift in Sources */,
 				37D71C5D2A24DDD8000DAD75 /* GameView2048.swift in Sources */,
 				373A6FCB2A1DA6AB006924AC /* GameCenterView.swift in Sources */,
