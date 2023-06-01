@@ -55,7 +55,7 @@ struct GameItem: View {
             RoundedRectangle(cornerRadius: 30, style: .continuous)
                 .matchedGeometryEffect(id: "mask\(game.id)", in: namespace)
         }
-        .frame(height: 300)
+        .frame(height: 250)
     }
 }
 

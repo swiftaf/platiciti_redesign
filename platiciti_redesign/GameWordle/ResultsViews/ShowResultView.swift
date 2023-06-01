@@ -76,9 +76,10 @@ struct ShowResultView: View {
       }
       .font(.title3)
       .multilineTextAlignment(.center)
-      .overlay {
-          Text("show")
-      }
+      
+//      .overlay {
+//          Text("show")
+//      }
   }
 }
 

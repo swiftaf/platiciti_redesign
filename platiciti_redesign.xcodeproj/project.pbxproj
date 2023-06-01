@@ -14,6 +14,9 @@
 		371FDBCB2A1C10850050C353 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371FDBCA2A1C10850050C353 /* TabBar.swift */; };
 		371FDBCD2A1C19DA0050C353 /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371FDBCC2A1C19DA0050C353 /* Tab.swift */; };
 		37244D292A26B1B2002CF419 /* Extension+View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37244D282A26B1B2002CF419 /* Extension+View.swift */; };
+		37244D2E2A27DFF3002CF419 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37244D2C2A27DFEC002CF419 /* GameKit.framework */; };
+		37244D332A27E176002CF419 /* GKMatchmakerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37244D322A27E176002CF419 /* GKMatchmakerViewController.swift */; };
+		37244D352A27E183002CF419 /* GameCenterHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37244D342A27E183002CF419 /* GameCenterHelper.swift */; };
 		373A6FBB2A1D43F4006924AC /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373A6FBA2A1D43F4006924AC /* Styles.swift */; };
 		373A6FBF2A1D4835006924AC /* FeaturedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373A6FBE2A1D4835006924AC /* FeaturedItem.swift */; };
 		373A6FC12A1D4A85006924AC /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373A6FC02A1D4A85006924AC /* NavigationBar.swift */; };
@@ -64,18 +67,6 @@
 		37C65E352A21A3D300314B40 /* XGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C65E342A21A3D300314B40 /* XGameView.swift */; };
 		37C65E372A21ADE300314B40 /* animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C65E362A21ADE300314B40 /* animations.swift */; };
 		37C65E392A22187600314B40 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C65E382A22187600314B40 /* Model.swift */; };
-		37C65E4E2A23909500314B40 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C65E3D2A23909500314B40 /* AppState.swift */; };
-		37C65E4F2A23909500314B40 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C65E3E2A23909500314B40 /* GameView.swift */; };
-		37C65E502A23909500314B40 /* Words.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C65E3F2A23909500314B40 /* Words.swift */; };
-		37C65E512A23909500314B40 /* wordle-allowed-guesses_en.txt in Resources */ = {isa = PBXBuildFile; fileRef = 37C65E422A23909500314B40 /* wordle-allowed-guesses_en.txt */; };
-		37C65E522A23909500314B40 /* wordle-answers-alphabetical_en.txt in Resources */ = {isa = PBXBuildFile; fileRef = 37C65E432A23909500314B40 /* wordle-answers-alphabetical_en.txt */; };
-		37C65E532A23909500314B40 /* wordle-answers-alphabetical_fr.txt in Resources */ = {isa = PBXBuildFile; fileRef = 37C65E452A23909500314B40 /* wordle-answers-alphabetical_fr.txt */; };
-		37C65E542A23909500314B40 /* wordle-allowed-guesses_fr.txt in Resources */ = {isa = PBXBuildFile; fileRef = 37C65E462A23909500314B40 /* wordle-allowed-guesses_fr.txt */; };
-		37C65E562A23909500314B40 /* WordleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C65E482A23909500314B40 /* WordleApp.swift */; };
-		37C65E572A23909500314B40 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37C65E4A2A23909500314B40 /* Preview Assets.xcassets */; };
-		37C65E582A23909500314B40 /* KeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C65E4B2A23909500314B40 /* KeyboardView.swift */; };
-		37C65E592A23909500314B40 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C65E4C2A23909500314B40 /* Models.swift */; };
-		37C65E5A2A23909500314B40 /* GameOverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C65E4D2A23909500314B40 /* GameOverView.swift */; };
 		37C65E5D2A23930500314B40 /* CombineSchedulers in Frameworks */ = {isa = PBXBuildFile; productRef = 37C65E5C2A23930500314B40 /* CombineSchedulers */; };
 		37C65E602A23933900314B40 /* CasePaths in Frameworks */ = {isa = PBXBuildFile; productRef = 37C65E5F2A23933900314B40 /* CasePaths */; };
 		37C65E632A23936D00314B40 /* Collections in Frameworks */ = {isa = PBXBuildFile; productRef = 37C65E622A23936D00314B40 /* Collections */; };
@@ -103,6 +94,10 @@
 		371FDBCA2A1C10850050C353 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		371FDBCC2A1C19DA0050C353 /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
 		37244D282A26B1B2002CF419 /* Extension+View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+View.swift"; sourceTree = "<group>"; };
+		37244D2C2A27DFEC002CF419 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
+		37244D312A27E109002CF419 /* platiciti_redesign.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = platiciti_redesign.entitlements; sourceTree = "<group>"; };
+		37244D322A27E176002CF419 /* GKMatchmakerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKMatchmakerViewController.swift; sourceTree = "<group>"; };
+		37244D342A27E183002CF419 /* GameCenterHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameCenterHelper.swift; sourceTree = "<group>"; };
 		373A6FBA2A1D43F4006924AC /* Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Styles.swift; sourceTree = "<group>"; };
 		373A6FBE2A1D4835006924AC /* FeaturedItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedItem.swift; sourceTree = "<group>"; };
 		373A6FC02A1D4A85006924AC /* NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
@@ -154,18 +149,6 @@
 		37C65E342A21A3D300314B40 /* XGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XGameView.swift; sourceTree = "<group>"; };
 		37C65E362A21ADE300314B40 /* animations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = animations.swift; sourceTree = "<group>"; };
 		37C65E382A22187600314B40 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
-		37C65E3D2A23909500314B40 /* AppState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
-		37C65E3E2A23909500314B40 /* GameView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
-		37C65E3F2A23909500314B40 /* Words.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Words.swift; sourceTree = "<group>"; };
-		37C65E422A23909500314B40 /* wordle-allowed-guesses_en.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "wordle-allowed-guesses_en.txt"; sourceTree = "<group>"; };
-		37C65E432A23909500314B40 /* wordle-answers-alphabetical_en.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "wordle-answers-alphabetical_en.txt"; sourceTree = "<group>"; };
-		37C65E452A23909500314B40 /* wordle-answers-alphabetical_fr.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "wordle-answers-alphabetical_fr.txt"; sourceTree = "<group>"; };
-		37C65E462A23909500314B40 /* wordle-allowed-guesses_fr.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "wordle-allowed-guesses_fr.txt"; sourceTree = "<group>"; };
-		37C65E482A23909500314B40 /* WordleApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordleApp.swift; sourceTree = "<group>"; };
-		37C65E4A2A23909500314B40 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		37C65E4B2A23909500314B40 /* KeyboardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardView.swift; sourceTree = "<group>"; };
-		37C65E4C2A23909500314B40 /* Models.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
-		37C65E4D2A23909500314B40 /* GameOverView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameOverView.swift; sourceTree = "<group>"; };
 		37D71C5B2A24DDD7000DAD75 /* GameView2048.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameView2048.swift; sourceTree = "<group>"; };
 		37D71C5E2A251C33000DAD75 /* GameLogic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameLogic.swift; sourceTree = "<group>"; };
 		37D71C602A251C4D000DAD75 /* BlockGridView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlockGridView.swift; sourceTree = "<group>"; };
@@ -190,6 +173,7 @@
 				37C65E5D2A23930500314B40 /* CombineSchedulers in Frameworks */,
 				37C65E732A23941400314B40 /* XCTestDynamicOverlay in Frameworks */,
 				37C65E602A23933900314B40 /* CasePaths in Frameworks */,
+				37244D2E2A27DFF3002CF419 /* GameKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,9 +183,19 @@
 		37244D272A26B186002CF419 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				37244D342A27E183002CF419 /* GameCenterHelper.swift */,
+				37244D322A27E176002CF419 /* GKMatchmakerViewController.swift */,
 				37244D282A26B1B2002CF419 /* Extension+View.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		37244D2B2A27DFEB002CF419 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				37244D2C2A27DFEC002CF419 /* GameKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		373A6FB62A1D413D006924AC /* Navigation */ = {
@@ -312,7 +306,6 @@
 		374915082A26436D00E6EEEB /* GameWordle */ = {
 			isa = PBXGroup;
 			children = (
-				37244D272A26B186002CF419 /* Helpers */,
 				3749150D2A26439000E6EEEB /* ContentViewWordley.swift */,
 				3749150E2A26439000E6EEEB /* GameBoardViews */,
 				3749151D2A26439100E6EEEB /* KeyboardViews */,
@@ -391,6 +384,7 @@
 			children = (
 				3749D3C92A1AB9A5009FD1E7 /* platiciti_redesign */,
 				3749D3C82A1AB9A5009FD1E7 /* Products */,
+				37244D2B2A27DFEB002CF419 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -405,10 +399,11 @@
 		3749D3C92A1AB9A5009FD1E7 /* platiciti_redesign */ = {
 			isa = PBXGroup;
 			children = (
+				37244D312A27E109002CF419 /* platiciti_redesign.entitlements */,
+				37244D272A26B186002CF419 /* Helpers */,
 				374915082A26436D00E6EEEB /* GameWordle */,
 				374914CB2A26236D00E6EEEB /* GameTTT */,
 				37D71C572A24DD21000DAD75 /* Game2048 */,
-				37C65E3C2A23909500314B40 /* Wordle */,
 				3749D3D02A1AB9AB009FD1E7 /* Preview Content */,
 				3749D3CE2A1AB9AB009FD1E7 /* Assets.xcassets */,
 				3749D3CA2A1AB9A5009FD1E7 /* platiciti_redesignApp.swift */,
@@ -426,57 +421,6 @@
 			isa = PBXGroup;
 			children = (
 				3749D3D12A1AB9AB009FD1E7 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		37C65E3C2A23909500314B40 /* Wordle */ = {
-			isa = PBXGroup;
-			children = (
-				37C65E3D2A23909500314B40 /* AppState.swift */,
-				37C65E3E2A23909500314B40 /* GameView.swift */,
-				37C65E3F2A23909500314B40 /* Words.swift */,
-				37C65E402A23909500314B40 /* Resources */,
-				37C65E482A23909500314B40 /* WordleApp.swift */,
-				37C65E492A23909500314B40 /* Preview Content */,
-				37C65E4B2A23909500314B40 /* KeyboardView.swift */,
-				37C65E4C2A23909500314B40 /* Models.swift */,
-				37C65E4D2A23909500314B40 /* GameOverView.swift */,
-			);
-			path = Wordle;
-			sourceTree = "<group>";
-		};
-		37C65E402A23909500314B40 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				37C65E412A23909500314B40 /* English */,
-				37C65E442A23909500314B40 /* French */,
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
-		37C65E412A23909500314B40 /* English */ = {
-			isa = PBXGroup;
-			children = (
-				37C65E422A23909500314B40 /* wordle-allowed-guesses_en.txt */,
-				37C65E432A23909500314B40 /* wordle-answers-alphabetical_en.txt */,
-			);
-			path = English;
-			sourceTree = "<group>";
-		};
-		37C65E442A23909500314B40 /* French */ = {
-			isa = PBXGroup;
-			children = (
-				37C65E452A23909500314B40 /* wordle-answers-alphabetical_fr.txt */,
-				37C65E462A23909500314B40 /* wordle-allowed-guesses_fr.txt */,
-			);
-			path = French;
-			sourceTree = "<group>";
-		};
-		37C65E492A23909500314B40 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				37C65E4A2A23909500314B40 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -574,15 +518,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				37C65E572A23909500314B40 /* Preview Assets.xcassets in Resources */,
-				37C65E542A23909500314B40 /* wordle-allowed-guesses_fr.txt in Resources */,
 				374915292A26439200E6EEEB /* common-words-5.txt in Resources */,
 				374915282A26439200E6EEEB /* words-5.txt in Resources */,
 				3749153B2A26439200E6EEEB /* Preview Assets.xcassets in Resources */,
 				3749D3D22A1AB9AB009FD1E7 /* Preview Assets.xcassets in Resources */,
-				37C65E512A23909500314B40 /* wordle-allowed-guesses_en.txt in Resources */,
-				37C65E522A23909500314B40 /* wordle-answers-alphabetical_en.txt in Resources */,
-				37C65E532A23909500314B40 /* wordle-answers-alphabetical_fr.txt in Resources */,
 				3749D3CF2A1AB9AB009FD1E7 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -597,11 +536,11 @@
 				37D71C632A251C8B000DAD75 /* BlockView.swift in Sources */,
 				374914FE2A26239B00E6EEEB /* Controls.swift in Sources */,
 				373A6FC72A1D89D7006924AC /* Game.swift in Sources */,
+				37244D332A27E176002CF419 /* GKMatchmakerViewController.swift in Sources */,
 				37D71C672A251C9B000DAD75 /* IdentifiedBlock.swift in Sources */,
 				371FDBC12A1B0B5F0050C353 /* LaunchScreenStep.swift in Sources */,
 				37C65E332A21A22C00314B40 /* GameItem.swift in Sources */,
 				374915372A26439200E6EEEB /* GuessedLetter.swift in Sources */,
-				37C65E4E2A23909500314B40 /* AppState.swift in Sources */,
 				371FDBC72A1B0CCA0050C353 /* ContentView.swift in Sources */,
 				374914FB2A26239B00E6EEEB /* GridButton.swift in Sources */,
 				3749152B2A26439200E6EEEB /* ContentViewWordley.swift in Sources */,
@@ -614,8 +553,6 @@
 				373A6FC12A1D4A85006924AC /* NavigationBar.swift in Sources */,
 				3749152E2A26439200E6EEEB /* EmptyBoxView.swift in Sources */,
 				3749152D2A26439200E6EEEB /* ActionBarView.swift in Sources */,
-				37C65E582A23909500314B40 /* KeyboardView.swift in Sources */,
-				37C65E5A2A23909500314B40 /* GameOverView.swift in Sources */,
 				3749D3F82A1AE278009FD1E7 /* CalendarView.swift in Sources */,
 				3749D3F22A1AE1C6009FD1E7 /* HomeView.swift in Sources */,
 				373A6FC52A1D6259006924AC /* AnimatableFontModifier.swift in Sources */,
@@ -626,7 +563,6 @@
 				371FDBC52A1B0C1D0050C353 /* LaunchScreenView.swift in Sources */,
 				371FDBC32A1B0BA70050C353 /* LaunchScreenStateManager.swift in Sources */,
 				3749153A2A26439200E6EEEB /* KeyButtonView.swift in Sources */,
-				37C65E4F2A23909500314B40 /* GameView.swift in Sources */,
 				3749153F2A26439200E6EEEB /* ResultsSummaryView.swift in Sources */,
 				37C65E352A21A3D300314B40 /* XGameView.swift in Sources */,
 				374914F72A26239B00E6EEEB /* TicTacToe.swift in Sources */,
@@ -634,7 +570,6 @@
 				37C65E392A22187600314B40 /* Model.swift in Sources */,
 				374914F92A26239B00E6EEEB /* Collection + Extensions.swift in Sources */,
 				374915362A26439200E6EEEB /* GuessingGame.swift in Sources */,
-				37C65E562A23909500314B40 /* WordleApp.swift in Sources */,
 				37C65E372A21ADE300314B40 /* animations.swift in Sources */,
 				374915332A26439200E6EEEB /* GameStatistics.swift in Sources */,
 				374915312A26439200E6EEEB /* GameBoardView.swift in Sources */,
@@ -646,13 +581,12 @@
 				3749D3F62A1AE240009FD1E7 /* iMessageView.swift in Sources */,
 				373A6FC92A1D9829006924AC /* MatchedView.swift in Sources */,
 				374915342A26439200E6EEEB /* Guess.swift in Sources */,
+				37244D352A27E183002CF419 /* GameCenterHelper.swift in Sources */,
 				3749152F2A26439200E6EEEB /* GameResultView.swift in Sources */,
 				37D71C612A251C4E000DAD75 /* BlockGridView.swift in Sources */,
 				374915302A26439200E6EEEB /* GuessBoxView.swift in Sources */,
 				3749153D2A26439200E6EEEB /* StatisticsView.swift in Sources */,
-				37C65E502A23909500314B40 /* Words.swift in Sources */,
 				374915352A26439200E6EEEB /* Dictionary.swift in Sources */,
-				37C65E592A23909500314B40 /* Models.swift in Sources */,
 				37D71C682A251C9B000DAD75 /* BlockMatrix.swift in Sources */,
 				374914FD2A26239B00E6EEEB /* PlayerView.swift in Sources */,
 				374914FF2A26239B00E6EEEB /* GridLines.swift in Sources */,
@@ -786,12 +720,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = platiciti_redesign/platiciti_redesign.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"platiciti_redesign/Preview Content\"";
 				DEVELOPMENT_TEAM = ZV83F2R479;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Plasticiti;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -815,12 +752,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = platiciti_redesign/platiciti_redesign.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"platiciti_redesign/Preview Content\"";
 				DEVELOPMENT_TEAM = ZV83F2R479;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Plasticiti;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

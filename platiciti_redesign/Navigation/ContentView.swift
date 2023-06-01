@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import GameKit
 
 struct ContentView: View {
     @EnvironmentObject private var launchScreenState: LaunchScreenStateManager
@@ -35,7 +36,7 @@ struct ContentView: View {
         })
         .task {
             try? await getDataFromApi()
-            try? await Task.sleep(for: Duration.seconds(1))
+            try? await Task.sleep(for: Duration.seconds(3))
             self.launchScreenState.dismiss()
         }
     }

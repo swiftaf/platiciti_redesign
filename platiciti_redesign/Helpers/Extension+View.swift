@@ -11,10 +11,11 @@ extension View {
     // MARK: Custom View Modifier
     func blurredSheet<Content: View>(_ style: AnyShapeStyle, show: Binding<Bool>, onDismiss: @escaping ()->(),@ViewBuilder content: @escaping ()->Content)->some View{
         self
-            .sheet(isPresented: show, onDismiss: onDismiss) {
+            .fullScreenCover(isPresented: show, onDismiss: onDismiss) {
                 content()
                     .background(RemovebackgroundColor())
                     .frame(maxWidth: .infinity, maxHeight: .infinity)
+                    
                 background {
                     Rectangle()
                         .fill(style)

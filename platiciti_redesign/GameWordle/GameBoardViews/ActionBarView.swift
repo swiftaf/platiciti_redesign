@@ -37,32 +37,38 @@ struct ActionBarView: View {
   @ObservedObject var game: GuessingGame
 
   var body: some View {
-      HStack {
-          Spacer()
-          Text("Show Stats")
-              .foregroundColor(Color("AccentColor")).bold()
-          Button {
-              showStats = true
-          } label: {
-              Image(systemName: "chart.bar")
-                  .imageScale(.large)
-                  .accessibilityLabel("Show Stats")
+      ZStack {
+          
+          Color("Background")
+          HStack {
+              Spacer()
+              Text("Show Stats")
+                  .foregroundColor(Color("AccentColor")).bold()
+              Button {
+                  showStats = true
+              } label: {
+                  Image(systemName: "chart.bar")
+                      .imageScale(.large)
+                      .accessibilityLabel("Show Stats")
+              }
+              
+              Spacer()
+              Spacer()
+              Text("New Game")
+                  .foregroundColor(Color("AccentColor")).bold()
+              Button {
+                  game.newGame()
+              } label: {
+                  Image(systemName: "plus")
+                      .imageScale(.large).bold()
+                      .accessibilityLabel("New Game")
+              }
+              .disabled(game.status == .inprogress || game.status == .new)
+                Spacer()
           }
           
-          Spacer()
-          Spacer()
-          Text("New Game")
-              .foregroundColor(Color("AccentColor")).bold()
-          Button {
-              game.newGame()
-          } label: {
-              Image(systemName: "plus")
-                  .imageScale(.large).bold()
-                  .accessibilityLabel("New Game")
-          }
-          .disabled(game.status == .inprogress || game.status == .new)
-            Spacer()
-      }.padding(7)
+//          .padding(7)
+      }
       
   }
 }

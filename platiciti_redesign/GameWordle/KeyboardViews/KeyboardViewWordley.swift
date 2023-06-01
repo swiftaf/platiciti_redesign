@@ -58,9 +58,15 @@ struct KeyboardViewWordley: View {
           .padding(.horizontal, 20)
       }
         Rectangle()
-            .offset(y: -7)
             .foregroundColor(Color("Background"))
-            .frame(height: 20)
+            .frame(height: 1)
+            .overlay {
+                Rectangle()
+                
+                    .foregroundColor(Color("Background"))
+                    .frame(height: 100)
+                    .offset(y: 42)
+            }
     }
       
       

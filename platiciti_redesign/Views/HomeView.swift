@@ -9,6 +9,7 @@ import SwiftUI
 
 struct HomeView: View {
     @State var hasScrolled = false
+    
     @Namespace var namespace
     @State var show = false
     @State var showStatusBar = true
@@ -117,7 +118,7 @@ struct HomeView: View {
                                 .resizable()
                                 .aspectRatio(contentMode: .fit)
                                 .frame(height: 180)
-                                .offset(x: 52, y:-80)
+                                .offset(x: 50, y: -75)
                                 .offset(x: minX/2)
                         )
                 }

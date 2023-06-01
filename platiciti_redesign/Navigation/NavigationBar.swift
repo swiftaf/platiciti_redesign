@@ -6,12 +6,18 @@
 //
 
 import SwiftUI
+import GameKit
 
 struct NavigationBar: View {
     var title = ""
     @Binding var hasScrolled: Bool
+    @State var showSheet = false
+    var localPlayer = GKLocalPlayer.local
+    
     
     var body: some View {
+        var imageGk = localPlayer.loadPhoto(for: .normal)
+        
         ZStack {
             Color.clear
                 .background(.ultraThinMaterial)
@@ -25,12 +31,58 @@ struct NavigationBar: View {
                 .offset(y: hasScrolled ? -4 : 0)
             
             HStack(spacing:16) {
-                Image(systemName: "person.crop.circle")
+                Button {
+                    showSheet.toggle()
+                } label: {
+                    Image(systemName: "questionmark.circle")
+                        .font(.title.weight(.bold))
+                        .frame(width: 36, height: 36)
+                        .foregroundColor(.secondary)
+                        .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 14, style: .continuous))
+                        .strokeStyle(cornerRadius: 14)
+                }
+                .blurredSheet(.init(.ultraThinMaterial), show: $showSheet) {
+                    
+                } content: {
+                    ZStack {
+                        Image("coachmarksWhite")
+                            .resizable()
+                            .aspectRatio(contentMode: .fill)
+                            .background(.black).opacity(0.8)
+                            .offset(y: 10)
+                            .onTapGesture {
+                                showSheet.toggle()
+                            }
+                        Button {
+                            showSheet.toggle()
+                        } label: {
+                            Text("I get it, close this!")
+                                .padding(10)
+                                .font(.body.bold())
+                                .foregroundColor(.white)
+                        }
+                        .background(.blue)
+                        .cornerRadius(8)
+                        .ignoresSafeArea()
+                        .frame(alignment: .bottom)
+                        .shadow(color: .white, radius: 10)
+                        .offset(y: -20)
+                        
+                    }
+                    
+                }
+                
+                if localPlayer.isAuthenticated {
+                   imageGk
+                } else {
+                    Image(systemName: "person.crop.circle")
+                }
                     .font(.title.weight(.bold))
                     .frame(width: 36, height: 36)
                     .foregroundColor(.secondary)
                     .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 14, style: .continuous))
                 .strokeStyle(cornerRadius: 14)
+            
             }
             .frame(maxWidth: .infinity, alignment: .trailing)
             .padding(.trailing, 20)
@@ -39,8 +91,15 @@ struct NavigationBar: View {
         }
         .frame(height: hasScrolled ? 44 : 70)
         .frame(maxHeight: .infinity, alignment: .top)
+        
     }
+    
+    
+
+
+    
 }
+
 
 struct NavigationBar_Previews: PreviewProvider {
     static var previews: some View {

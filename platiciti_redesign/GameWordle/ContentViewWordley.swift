@@ -41,22 +41,24 @@ struct ContentViewWordley: View {
     
   var body: some View {
     VStack {
-//      Text("Guess The Word")
-//        .font(.title)
-//        .accessibilityAddTraits(.isHeader)
+
       GameBoardView(game: game)
+      
       KeyboardViewWordley(game: game)
-        .padding(5)
+      Spacer()
       ActionBarView(
         showStats: $showStats,
         game: game
       )
+      .frame(height: 50, alignment: .bottom)
     }
     .sheet(isPresented: $showResults) {
         GameResultView(game: game).opacity(0.8)
+            .presentationDetents([.large,.medium])
     }
     .sheet(isPresented: $showStats) {
         StatisticsView(stats: GameStatistics(gameRecord: game.gameRecord)).opacity(0.8)
+            .presentationDetents([.large])
     }
       // 1
       .onChange(of: game.status) { newStatus in

@@ -51,11 +51,13 @@ struct KeyButtonView: View {
           .frame(maxWidth: .infinity)
       }
     }
+    .frame(height: 40)
     .padding(6)
     .background {
       RoundedRectangle(cornerRadius: 5.0)
         .stroke()
     }
+    
     .foregroundColor(Color(UIColor.label))
   }
 }
