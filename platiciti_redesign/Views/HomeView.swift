@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import GameKit
 
 struct HomeView: View {
     @State var hasScrolled = false
@@ -17,6 +18,7 @@ struct HomeView: View {
     @EnvironmentObject var model: Model
     
     var body: some View {
+               
         ZStack {
             Color("Background").ignoresSafeArea()
             
@@ -25,7 +27,7 @@ struct HomeView: View {
                 
                 featured
                 
-                Text("Games".uppercased())
+                Text("More Games".uppercased())
                     .font(.title3.weight(.semibold))
                     .foregroundColor(.secondary)
                     .frame(maxWidth: .infinity, alignment: .leading)
@@ -55,7 +57,7 @@ struct HomeView: View {
                 Color.clear.frame(height: 70)
             })
             .overlay(
-                NavigationBar(title: "Featured", hasScrolled: $hasScrolled)
+                NavigationBar(title: "Featured Games", hasScrolled: $hasScrolled)
             )
             .background(
                 Image("launchScreenBgIpad")

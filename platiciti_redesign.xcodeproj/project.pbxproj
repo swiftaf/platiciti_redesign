@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3711BC5C2A284490007A86CB /* GameCenterKit in Frameworks */ = {isa = PBXBuildFile; productRef = 3711BC5B2A284490007A86CB /* GameCenterKit */; };
 		371FDBC12A1B0B5F0050C353 /* LaunchScreenStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371FDBC02A1B0B5F0050C353 /* LaunchScreenStep.swift */; };
 		371FDBC32A1B0BA70050C353 /* LaunchScreenStateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371FDBC22A1B0BA70050C353 /* LaunchScreenStateManager.swift */; };
 		371FDBC52A1B0C1D0050C353 /* LaunchScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371FDBC42A1B0C1D0050C353 /* LaunchScreenView.swift */; };
@@ -24,7 +25,7 @@
 		373A6FC52A1D6259006924AC /* AnimatableFontModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373A6FC42A1D6259006924AC /* AnimatableFontModifier.swift */; };
 		373A6FC72A1D89D7006924AC /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373A6FC62A1D89D7006924AC /* Game.swift */; };
 		373A6FC92A1D9829006924AC /* MatchedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373A6FC82A1D9829006924AC /* MatchedView.swift */; };
-		373A6FCB2A1DA6AB006924AC /* GameCenterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373A6FCA2A1DA6AB006924AC /* GameCenterView.swift */; };
+		373A6FCB2A1DA6AB006924AC /* GCView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373A6FCA2A1DA6AB006924AC /* GCView.swift */; };
 		374914F72A26239B00E6EEEB /* TicTacToe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374914D92A26239900E6EEEB /* TicTacToe.swift */; };
 		374914F92A26239B00E6EEEB /* Collection + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374914DB2A26239900E6EEEB /* Collection + Extensions.swift */; };
 		374914FA2A26239B00E6EEEB /* TicTacToeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374914DD2A26239900E6EEEB /* TicTacToeApp.swift */; };
@@ -87,6 +88,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3711BC5D2A28E9FB007A86CB /* platiciti-redesign-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "platiciti-redesign-Info.plist"; sourceTree = SOURCE_ROOT; };
 		371FDBC02A1B0B5F0050C353 /* LaunchScreenStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenStep.swift; sourceTree = "<group>"; };
 		371FDBC22A1B0BA70050C353 /* LaunchScreenStateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenStateManager.swift; sourceTree = "<group>"; };
 		371FDBC42A1B0C1D0050C353 /* LaunchScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenView.swift; sourceTree = "<group>"; };
@@ -105,7 +107,7 @@
 		373A6FC42A1D6259006924AC /* AnimatableFontModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatableFontModifier.swift; sourceTree = "<group>"; };
 		373A6FC62A1D89D7006924AC /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		373A6FC82A1D9829006924AC /* MatchedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchedView.swift; sourceTree = "<group>"; };
-		373A6FCA2A1DA6AB006924AC /* GameCenterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCenterView.swift; sourceTree = "<group>"; };
+		373A6FCA2A1DA6AB006924AC /* GCView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCView.swift; sourceTree = "<group>"; };
 		374914D92A26239900E6EEEB /* TicTacToe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicTacToe.swift; sourceTree = "<group>"; };
 		374914DB2A26239900E6EEEB /* Collection + Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Collection + Extensions.swift"; sourceTree = "<group>"; };
 		374914DD2A26239900E6EEEB /* TicTacToeApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicTacToeApp.swift; sourceTree = "<group>"; };
@@ -166,6 +168,7 @@
 			files = (
 				37C65E672A23936D00314B40 /* OrderedCollections in Frameworks */,
 				37C65E702A2393F500314B40 /* IdentifiedCollections in Frameworks */,
+				3711BC5C2A284490007A86CB /* GameCenterKit in Frameworks */,
 				37C65E632A23936D00314B40 /* Collections in Frameworks */,
 				37C65E6A2A2393A500314B40 /* ComposableArchitecture in Frameworks */,
 				37C65E6D2A2393D100314B40 /* CustomDump in Frameworks */,
@@ -212,7 +215,7 @@
 			isa = PBXGroup;
 			children = (
 				3749D3F12A1AE1C6009FD1E7 /* HomeView.swift */,
-				373A6FCA2A1DA6AB006924AC /* GameCenterView.swift */,
+				373A6FCA2A1DA6AB006924AC /* GCView.swift */,
 				3749D3F52A1AE240009FD1E7 /* iMessageView.swift */,
 				3749D3F92A1AE8A1009FD1E7 /* ShareView.swift */,
 				3749D3F72A1AE278009FD1E7 /* CalendarView.swift */,
@@ -399,6 +402,7 @@
 		3749D3C92A1AB9A5009FD1E7 /* platiciti_redesign */ = {
 			isa = PBXGroup;
 			children = (
+				3711BC5D2A28E9FB007A86CB /* platiciti-redesign-Info.plist */,
 				37244D312A27E109002CF419 /* platiciti_redesign.entitlements */,
 				37244D272A26B186002CF419 /* Helpers */,
 				374915082A26436D00E6EEEB /* GameWordle */,
@@ -466,6 +470,7 @@
 				37C65E6C2A2393D100314B40 /* CustomDump */,
 				37C65E6F2A2393F500314B40 /* IdentifiedCollections */,
 				37C65E722A23941400314B40 /* XCTestDynamicOverlay */,
+				3711BC5B2A284490007A86CB /* GameCenterKit */,
 			);
 			productName = platiciti_redesign;
 			productReference = 3749D3C72A1AB9A5009FD1E7 /* platiciti_redesign.app */;
@@ -503,6 +508,7 @@
 				37C65E6B2A2393D100314B40 /* XCRemoteSwiftPackageReference "swift-custom-dump" */,
 				37C65E6E2A2393F500314B40 /* XCRemoteSwiftPackageReference "swift-identified-collections" */,
 				37C65E712A23941400314B40 /* XCRemoteSwiftPackageReference "xctest-dynamic-overlay" */,
+				3711BC5A2A284490007A86CB /* XCRemoteSwiftPackageReference "GameCenterKit" */,
 			);
 			productRefGroup = 3749D3C82A1AB9A5009FD1E7 /* Products */;
 			projectDirPath = "";
@@ -594,7 +600,7 @@
 				374915012A26239B00E6EEEB /* Appearance.swift in Sources */,
 				371FDBCD2A1C19DA0050C353 /* Tab.swift in Sources */,
 				37D71C5D2A24DDD8000DAD75 /* GameView2048.swift in Sources */,
-				373A6FCB2A1DA6AB006924AC /* GameCenterView.swift in Sources */,
+				373A6FCB2A1DA6AB006924AC /* GCView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -727,9 +733,9 @@
 				DEVELOPMENT_TEAM = ZV83F2R479;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "platiciti-redesign-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = Plasticiti;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -759,9 +765,9 @@
 				DEVELOPMENT_TEAM = ZV83F2R479;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "platiciti-redesign-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = Plasticiti;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -803,6 +809,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		3711BC5A2A284490007A86CB /* XCRemoteSwiftPackageReference "GameCenterKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/fserrazes/GameCenterKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.2.2;
+			};
+		};
 		37C65E5B2A23930500314B40 /* XCRemoteSwiftPackageReference "combine-schedulers" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/pointfreeco/combine-schedulers";
@@ -862,6 +876,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		3711BC5B2A284490007A86CB /* GameCenterKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3711BC5A2A284490007A86CB /* XCRemoteSwiftPackageReference "GameCenterKit" */;
+			productName = GameCenterKit;
+		};
 		37C65E5C2A23930500314B40 /* CombineSchedulers */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 37C65E5B2A23930500314B40 /* XCRemoteSwiftPackageReference "combine-schedulers" */;

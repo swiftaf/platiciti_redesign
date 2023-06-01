@@ -6,11 +6,14 @@
 //
 
 import SwiftUI
+import GameKit
+import GameCenterKit
 
 struct TabBar: View {
     @AppStorage("selectedTab") var selectedTab: Tab = .games
     @State var color: Color = .indigo
     @State var tabItemWidth: CGFloat = 0
+//    @State var isGameCenterOpen: Bool = false
     
     
     var body: some View {
@@ -34,15 +37,30 @@ struct TabBar: View {
             .frame(maxHeight: .infinity, alignment: .bottom)
         .ignoresSafeArea()
         }
+//        .sheet(isPresented: $isGameCenterOpen) {
+//            GCView()
+//        }
     }
     
     var buttons: some View {
         ForEach(tabItems) { item in
             Button {
-                withAnimation(.spring(response: 0.4, dampingFraction: 0.6)) {
-                    selectedTab = item.tab
-                    color = item.color
-                }
+                
+//                if item.tab == .gameCent {
+//                    isGameCenterOpen = true
+//                    withAnimation(.spring(response: 0.4, dampingFraction: 0.6)) {
+//                        selectedTab = item.tab
+//                        color = item.color
+//                    }
+//
+//                } else {
+                    withAnimation(.spring(response: 0.4, dampingFraction: 0.6)) {
+                        selectedTab = item.tab
+                        color = item.color
+                    }
+//                }
+                
+                
             } label: {
                 VStack(spacing: 0) {
                     Image(systemName: item.icon)
@@ -113,6 +131,8 @@ struct TabBar: View {
         }
         .padding(.horizontal, 12)
     }
+    
+
     
 }
 

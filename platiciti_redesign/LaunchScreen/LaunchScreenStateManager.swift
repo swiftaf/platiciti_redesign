@@ -21,7 +21,7 @@ final class LaunchScreenStateManager: ObservableObject {
                 print(error?.localizedDescription ?? "")
                 return
             }
-//            GKAccessPoint.shared.isActive = self.localPlayer.isAuthenticated
+            GKAccessPoint.shared.isActive = self.localPlayer.isAuthenticated
         }
     }
 

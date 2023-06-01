@@ -8,15 +8,15 @@
 import SwiftUI
 import GameKit
 
+
 struct NavigationBar: View {
     var title = ""
     @Binding var hasScrolled: Bool
     @State var showSheet = false
-    var localPlayer = GKLocalPlayer.local
-    
+  
     
     var body: some View {
-        var imageGk = localPlayer.loadPhoto(for: .normal)
+        
         
         ZStack {
             Color.clear
@@ -30,7 +30,7 @@ struct NavigationBar: View {
                 .padding(.top, 20)
                 .offset(y: hasScrolled ? -4 : 0)
             
-            HStack(spacing:16) {
+            HStack(spacing:20) {
                 Button {
                     showSheet.toggle()
                 } label: {
@@ -49,7 +49,7 @@ struct NavigationBar: View {
                             .resizable()
                             .aspectRatio(contentMode: .fill)
                             .background(.black).opacity(0.8)
-                            .offset(y: 10)
+                            .offset(y: 13)
                             .onTapGesture {
                                 showSheet.toggle()
                             }
@@ -71,25 +71,24 @@ struct NavigationBar: View {
                     }
                     
                 }
-                
-                if localPlayer.isAuthenticated {
-                   imageGk
-                } else {
+
                     Image(systemName: "person.crop.circle")
-                }
-                    .font(.title.weight(.bold))
-                    .frame(width: 36, height: 36)
-                    .foregroundColor(.secondary)
-                    .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 14, style: .continuous))
-                .strokeStyle(cornerRadius: 14)
+                        .font(.title.weight(.bold))
+                        .frame(width: 36, height: 36)
+                        .foregroundColor(.secondary)
+                        .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 14, style: .continuous))
+                        .strokeStyle(cornerRadius: 14)
+                
+                
+                    
             
             }
             .frame(maxWidth: .infinity, alignment: .trailing)
             .padding(.trailing, 20)
             .padding(.top, 20)
-            .offset(y: hasScrolled ? -4 : 0)
+            .offset(y: hasScrolled ? 0 : 0)
         }
-        .frame(height: hasScrolled ? 44 : 70)
+        .frame(height: hasScrolled ? 70 : 70)
         .frame(maxHeight: .infinity, alignment: .top)
         
     }

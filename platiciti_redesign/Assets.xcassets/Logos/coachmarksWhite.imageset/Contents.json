@@ -1,11 +1,11 @@
 {
   "images" : [
     {
+      "filename" : "coachmarksWhite.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "coachmarksWhite.png",
       "idiom" : "universal",
       "scale" : "2x"
     },

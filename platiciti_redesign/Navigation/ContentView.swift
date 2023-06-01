@@ -7,6 +7,7 @@
 
 import SwiftUI
 import GameKit
+import GameCenterKit
 
 struct ContentView: View {
     @EnvironmentObject private var launchScreenState: LaunchScreenStateManager
@@ -23,7 +24,7 @@ struct ContentView: View {
             case .shareRes:
                 iMessageView()
             case .gameCent:
-                GameCenterView()
+                GCView()
             }
 
             TabBar()

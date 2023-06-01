@@ -7,6 +7,7 @@
 
 import SwiftUI
 import ComposableArchitecture
+import GameKit
 
 extension AnyTransition {
     static var moveAndFade: AnyTransition {
@@ -26,6 +27,7 @@ struct XGameView: View {
     @State var viewState: CGSize = .zero
     @State var isDraggable = true
     let gameLogic = GameLogic()
+    var localPlayer = GKLocalPlayer.local
     
     var body: some View {
         ZStack {
@@ -56,7 +58,6 @@ struct XGameView: View {
             fadeIn()
         }
         .onChange(of: show) { newValue in
-            
             fadeOut()
         }
     }
@@ -75,6 +76,7 @@ struct XGameView: View {
 //        .gesture(isDraggable ? drag : nil)
 //        .ignoresSafeArea()
 //    }
+    
     
     var cover: some View {
         GeometryReader { proxy in
@@ -209,6 +211,7 @@ struct XGameView: View {
     }
     
     func fadeIn() {
+        
         withAnimation(.easeOut.delay(0.3)) {
             appear[0] = true
         }
@@ -221,6 +224,7 @@ struct XGameView: View {
     }
     
     func fadeOut() {
+        
         appear[0] = false
         appear[1] = false
     }
@@ -230,7 +234,6 @@ struct XGameView: View {
             show.toggle()
             model.showDetail.toggle()
         }
-        
         withAnimation(.closeCard) {
             viewState = .zero
         }
