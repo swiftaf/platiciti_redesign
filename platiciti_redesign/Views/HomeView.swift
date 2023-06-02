@@ -61,7 +61,7 @@ struct HomeView: View {
             )
             .background(
                 Image("launchScreenBgIpad")
-                    .opacity(0.40)
+                    .opacity(0.50)
 //                    .offset(x: 200, y: 200)
                     .scaleEffect(0.7)
                     .ignoresSafeArea()

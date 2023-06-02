@@ -37,9 +37,7 @@ struct TabBar: View {
             .frame(maxHeight: .infinity, alignment: .bottom)
         .ignoresSafeArea()
         }
-//        .sheet(isPresented: $isGameCenterOpen) {
-//            GCView()
-//        }
+
     }
     
     var buttons: some View {

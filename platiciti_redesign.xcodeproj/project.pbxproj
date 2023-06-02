@@ -24,8 +24,6 @@
 		373A6FC32A1D593F006924AC /* PreferenceKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373A6FC22A1D593F006924AC /* PreferenceKeys.swift */; };
 		373A6FC52A1D6259006924AC /* AnimatableFontModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373A6FC42A1D6259006924AC /* AnimatableFontModifier.swift */; };
 		373A6FC72A1D89D7006924AC /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373A6FC62A1D89D7006924AC /* Game.swift */; };
-		373A6FC92A1D9829006924AC /* MatchedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373A6FC82A1D9829006924AC /* MatchedView.swift */; };
-		373A6FCB2A1DA6AB006924AC /* GCView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373A6FCA2A1DA6AB006924AC /* GCView.swift */; };
 		374914F72A26239B00E6EEEB /* TicTacToe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374914D92A26239900E6EEEB /* TicTacToe.swift */; };
 		374914F92A26239B00E6EEEB /* Collection + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374914DB2A26239900E6EEEB /* Collection + Extensions.swift */; };
 		374914FA2A26239B00E6EEEB /* TicTacToeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374914DD2A26239900E6EEEB /* TicTacToeApp.swift */; };
@@ -62,8 +60,12 @@
 		3749D3D22A1AB9AB009FD1E7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3749D3D12A1AB9AB009FD1E7 /* Preview Assets.xcassets */; };
 		3749D3F22A1AE1C6009FD1E7 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3749D3F12A1AE1C6009FD1E7 /* HomeView.swift */; };
 		3749D3F62A1AE240009FD1E7 /* iMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3749D3F52A1AE240009FD1E7 /* iMessageView.swift */; };
-		3749D3F82A1AE278009FD1E7 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3749D3F72A1AE278009FD1E7 /* CalendarView.swift */; };
 		3749D3FA2A1AE8A1009FD1E7 /* ShareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3749D3F92A1AE8A1009FD1E7 /* ShareView.swift */; };
+		37C4986E2A2951F600E51843 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C4986D2A2951F600E51843 /* SettingsView.swift */; };
+		37C498722A297A4600E51843 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C498712A297A4600E51843 /* CalendarView.swift */; };
+		37C498742A29831E00E51843 /* ProgressItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C498732A29831E00E51843 /* ProgressItem.swift */; };
+		37C498762A29835D00E51843 /* Progress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C498752A29835D00E51843 /* Progress.swift */; };
+		37C498782A29A80900E51843 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C498772A29A80900E51843 /* AboutView.swift */; };
 		37C65E332A21A22C00314B40 /* GameItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C65E322A21A22C00314B40 /* GameItem.swift */; };
 		37C65E352A21A3D300314B40 /* XGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C65E342A21A3D300314B40 /* XGameView.swift */; };
 		37C65E372A21ADE300314B40 /* animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C65E362A21ADE300314B40 /* animations.swift */; };
@@ -106,8 +108,6 @@
 		373A6FC22A1D593F006924AC /* PreferenceKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceKeys.swift; sourceTree = "<group>"; };
 		373A6FC42A1D6259006924AC /* AnimatableFontModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatableFontModifier.swift; sourceTree = "<group>"; };
 		373A6FC62A1D89D7006924AC /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
-		373A6FC82A1D9829006924AC /* MatchedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchedView.swift; sourceTree = "<group>"; };
-		373A6FCA2A1DA6AB006924AC /* GCView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCView.swift; sourceTree = "<group>"; };
 		374914D92A26239900E6EEEB /* TicTacToe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicTacToe.swift; sourceTree = "<group>"; };
 		374914DB2A26239900E6EEEB /* Collection + Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Collection + Extensions.swift"; sourceTree = "<group>"; };
 		374914DD2A26239900E6EEEB /* TicTacToeApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicTacToeApp.swift; sourceTree = "<group>"; };
@@ -145,8 +145,12 @@
 		3749D3D12A1AB9AB009FD1E7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3749D3F12A1AE1C6009FD1E7 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		3749D3F52A1AE240009FD1E7 /* iMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iMessageView.swift; sourceTree = "<group>"; };
-		3749D3F72A1AE278009FD1E7 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
 		3749D3F92A1AE8A1009FD1E7 /* ShareView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareView.swift; sourceTree = "<group>"; };
+		37C4986D2A2951F600E51843 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		37C498712A297A4600E51843 /* CalendarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		37C498732A29831E00E51843 /* ProgressItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressItem.swift; sourceTree = "<group>"; };
+		37C498752A29835D00E51843 /* Progress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Progress.swift; sourceTree = "<group>"; };
+		37C498772A29A80900E51843 /* AboutView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
 		37C65E322A21A22C00314B40 /* GameItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameItem.swift; sourceTree = "<group>"; };
 		37C65E342A21A3D300314B40 /* XGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XGameView.swift; sourceTree = "<group>"; };
 		37C65E362A21ADE300314B40 /* animations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = animations.swift; sourceTree = "<group>"; };
@@ -214,12 +218,12 @@
 		373A6FB72A1D4166006924AC /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				37C4986D2A2951F600E51843 /* SettingsView.swift */,
+				37C498712A297A4600E51843 /* CalendarView.swift */,
+				37C498772A29A80900E51843 /* AboutView.swift */,
 				3749D3F12A1AE1C6009FD1E7 /* HomeView.swift */,
-				373A6FCA2A1DA6AB006924AC /* GCView.swift */,
 				3749D3F52A1AE240009FD1E7 /* iMessageView.swift */,
 				3749D3F92A1AE8A1009FD1E7 /* ShareView.swift */,
-				3749D3F72A1AE278009FD1E7 /* CalendarView.swift */,
-				373A6FC82A1D9829006924AC /* MatchedView.swift */,
 				37C65E342A21A3D300314B40 /* XGameView.swift */,
 			);
 			path = Views;
@@ -231,6 +235,7 @@
 				371FDBCC2A1C19DA0050C353 /* Tab.swift */,
 				373A6FC22A1D593F006924AC /* PreferenceKeys.swift */,
 				373A6FC62A1D89D7006924AC /* Game.swift */,
+				37C498752A29835D00E51843 /* Progress.swift */,
 				37C65E382A22187600314B40 /* Model.swift */,
 			);
 			path = Model;
@@ -261,6 +266,7 @@
 			children = (
 				373A6FBE2A1D4835006924AC /* FeaturedItem.swift */,
 				37C65E322A21A22C00314B40 /* GameItem.swift */,
+				37C498732A29831E00E51843 /* ProgressItem.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -402,15 +408,15 @@
 		3749D3C92A1AB9A5009FD1E7 /* platiciti_redesign */ = {
 			isa = PBXGroup;
 			children = (
+				3749D3CA2A1AB9A5009FD1E7 /* platiciti_redesignApp.swift */,
 				3711BC5D2A28E9FB007A86CB /* platiciti-redesign-Info.plist */,
 				37244D312A27E109002CF419 /* platiciti_redesign.entitlements */,
+				3749D3CE2A1AB9AB009FD1E7 /* Assets.xcassets */,
 				37244D272A26B186002CF419 /* Helpers */,
 				374915082A26436D00E6EEEB /* GameWordle */,
 				374914CB2A26236D00E6EEEB /* GameTTT */,
 				37D71C572A24DD21000DAD75 /* Game2048 */,
 				3749D3D02A1AB9AB009FD1E7 /* Preview Content */,
-				3749D3CE2A1AB9AB009FD1E7 /* Assets.xcassets */,
-				3749D3CA2A1AB9A5009FD1E7 /* platiciti_redesignApp.swift */,
 				373A6FB62A1D413D006924AC /* Navigation */,
 				373A6FB72A1D4166006924AC /* Views */,
 				373A6FBD2A1D480D006924AC /* Components */,
@@ -539,6 +545,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37C498782A29A80900E51843 /* AboutView.swift in Sources */,
 				37D71C632A251C8B000DAD75 /* BlockView.swift in Sources */,
 				374914FE2A26239B00E6EEEB /* Controls.swift in Sources */,
 				373A6FC72A1D89D7006924AC /* Game.swift in Sources */,
@@ -551,6 +558,8 @@
 				374914FB2A26239B00E6EEEB /* GridButton.swift in Sources */,
 				3749152B2A26439200E6EEEB /* ContentViewWordley.swift in Sources */,
 				3749153E2A26439200E6EEEB /* ShowResultView.swift in Sources */,
+				37C498722A297A4600E51843 /* CalendarView.swift in Sources */,
+				37C498742A29831E00E51843 /* ProgressItem.swift in Sources */,
 				374915002A26239B00E6EEEB /* ContentViewTTT.swift in Sources */,
 				373A6FBB2A1D43F4006924AC /* Styles.swift in Sources */,
 				3749152C2A26439200E6EEEB /* CurrentGuessView.swift in Sources */,
@@ -559,7 +568,7 @@
 				373A6FC12A1D4A85006924AC /* NavigationBar.swift in Sources */,
 				3749152E2A26439200E6EEEB /* EmptyBoxView.swift in Sources */,
 				3749152D2A26439200E6EEEB /* ActionBarView.swift in Sources */,
-				3749D3F82A1AE278009FD1E7 /* CalendarView.swift in Sources */,
+				37C4986E2A2951F600E51843 /* SettingsView.swift in Sources */,
 				3749D3F22A1AE1C6009FD1E7 /* HomeView.swift in Sources */,
 				373A6FC52A1D6259006924AC /* AnimatableFontModifier.swift in Sources */,
 				374914FC2A26239B00E6EEEB /* TicTacToeGrid.swift in Sources */,
@@ -573,6 +582,7 @@
 				37C65E352A21A3D300314B40 /* XGameView.swift in Sources */,
 				374914F72A26239B00E6EEEB /* TicTacToe.swift in Sources */,
 				37D71C5F2A251C33000DAD75 /* GameLogic.swift in Sources */,
+				37C498762A29835D00E51843 /* Progress.swift in Sources */,
 				37C65E392A22187600314B40 /* Model.swift in Sources */,
 				374914F92A26239B00E6EEEB /* Collection + Extensions.swift in Sources */,
 				374915362A26439200E6EEEB /* GuessingGame.swift in Sources */,
@@ -585,7 +595,6 @@
 				374915392A26439200E6EEEB /* KeyboardViewWordley.swift in Sources */,
 				3749D3CB2A1AB9A5009FD1E7 /* platiciti_redesignApp.swift in Sources */,
 				3749D3F62A1AE240009FD1E7 /* iMessageView.swift in Sources */,
-				373A6FC92A1D9829006924AC /* MatchedView.swift in Sources */,
 				374915342A26439200E6EEEB /* Guess.swift in Sources */,
 				37244D352A27E183002CF419 /* GameCenterHelper.swift in Sources */,
 				3749152F2A26439200E6EEEB /* GameResultView.swift in Sources */,
@@ -600,7 +609,6 @@
 				374915012A26239B00E6EEEB /* Appearance.swift in Sources */,
 				371FDBCD2A1C19DA0050C353 /* Tab.swift in Sources */,
 				37D71C5D2A24DDD8000DAD75 /* GameView2048.swift in Sources */,
-				373A6FCB2A1DA6AB006924AC /* GCView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

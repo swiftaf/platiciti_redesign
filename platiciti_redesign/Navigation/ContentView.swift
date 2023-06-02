@@ -7,7 +7,6 @@
 
 import SwiftUI
 import GameKit
-import GameCenterKit
 
 struct ContentView: View {
     @EnvironmentObject private var launchScreenState: LaunchScreenStateManager
@@ -22,16 +21,15 @@ struct ContentView: View {
             case .calHist:
                 CalendarView()
             case .shareRes:
-                iMessageView()
+                SettingsView()
             case .gameCent:
-                GCView()
+                ShareView()
             }
 
             TabBar()
                 .offset(y: model.showDetail ? 200 : 0)
 
         }
-        
         .safeAreaInset(edge: .bottom, content: {
             Color.clear.frame(height: 44)
         })
