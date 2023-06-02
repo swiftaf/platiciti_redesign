@@ -96,6 +96,7 @@ struct XGameView: View {
                     .frame(maxWidth: 500)
                     .matchedGeometryEffect(id: "image\(game.id)", in: namespace)
                     .offset(y: scrollY > 0 ? scrollY * -0.8 : 0)
+                    .accessibilityLabel("Game Image")
             )
             .background(
                 Image(game.background)
@@ -105,6 +106,7 @@ struct XGameView: View {
                     .offset(y: scrollY > 0 ? -scrollY : 0)
                     .scaleEffect(scrollY > 0 ? scrollY / 1000 + 1 : 1)
                     .blur(radius: scrollY / 10)
+                    .accessibilityLabel("Backgound Image")
             )
             .mask {
                 RoundedRectangle(cornerRadius: appear[0] ? 30 : 0, style: .continuous)

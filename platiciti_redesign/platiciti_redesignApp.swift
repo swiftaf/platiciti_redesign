@@ -12,6 +12,9 @@ import GameKit
 @main
 struct PlasticitiApp: App {
     
+    
+    @AppStorage("isDarkMode") private var isDarkMode = false
+    
     @StateObject var model = Model()
     
     @StateObject var launchScreenState = LaunchScreenStateManager()
@@ -38,6 +41,7 @@ struct PlasticitiApp: App {
             ZStack {
                 ContentView()
                     .environmentObject(model)
+                    .preferredColorScheme(isDarkMode ? .dark : .light)
                     .onAppear {
                         authenticateUser()
 //                        if showGameCenterAccessPoint {

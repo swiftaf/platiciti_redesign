@@ -31,13 +31,25 @@
 /// THE SOFTWARE.
 
 import SwiftUI
-
+import GameKit
 
 struct ContentViewWordley: View {
   @StateObject var game = GuessingGame()
   @State private var showResults = false
   @State private var showStats = false
   @Environment(\.scenePhase) var scenePhase
+    
+    let localPlayer = GKLocalPlayer.local
+    func authenticateUser() {
+        localPlayer.authenticateHandler = { vc, error in
+            guard error == nil else {
+                print(error?.localizedDescription ?? "")
+                return
+            }
+            GCController.startWirelessControllerDiscovery()
+            GKAccessPoint.shared.isActive = localPlayer.isAuthenticated
+        }
+    }
     
   var body: some View {
     VStack {
@@ -64,11 +76,56 @@ struct ContentViewWordley: View {
       .onChange(of: game.status) { newStatus in
         // 2
         if newStatus == .won || newStatus == .lost {
+            
+            if newStatus == .won {
+                // Game Center acheivements
+                // won at wordley
+                let achievment = GKAchievement(identifier: "grp.wonAtWordley")
+                achievment.percentComplete = 100
+                achievment.showsCompletionBanner = true
+                GKNotificationBanner.show(withTitle:"Hooray",
+                                          message:"You won at Wordley!",
+                                          completionHandler: nil)
+                GKAchievement.report([achievment]) { error
+                    in
+                    guard error == nil else {
+                        print(error?.localizedDescription ?? "")
+                        return
+                    }
+                    print("GC achievement added")
+                }
+                print("game won")
+                GKLeaderboard.submitScore(1, context: 0, player: GKLocalPlayer.local, leaderboardIDs: ["grp.WordleysWon"],  completionHandler: {error in
+                    if(error != nil){
+                        print("Error uploading score to Game Center leaderboard: \(String(describing: error))")
+                    }
+                })
+            }
+            if newStatus == .lost {
+                // GC achievement
+                // lost at wordley
+                let achievment = GKAchievement(identifier: "grp.lostAtWordley")
+                achievment.percentComplete = 100
+                achievment.showsCompletionBanner = true
+                GKNotificationBanner.show(withTitle:"Oh Well",
+                                          message:"Bummer, you didn't win this time.",
+                                          completionHandler: nil)
+                GKAchievement.report([achievment]) { error
+                    in
+                    guard error == nil else {
+                        print(error?.localizedDescription ?? "")
+                        return
+                    }
+                    print("done!")
+                }
+                print("game lost")
+            }
           // 3
           DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
             showResults = true
           }
         }
+          
       }
       // 1
       .onChange(of: scenePhase) { newPhase in

@@ -12,6 +12,7 @@ struct ContentView: View {
     @EnvironmentObject private var launchScreenState: LaunchScreenStateManager
     @AppStorage("selectedTab") var selectedTab: Tab = .games
     @EnvironmentObject var model: Model
+    @AppStorage("isDarkMode") private var isDarkMode = false
     
     var body: some View {
         ZStack(alignment: .bottom)  {
@@ -23,7 +24,7 @@ struct ContentView: View {
             case .shareRes:
                 SettingsView()
             case .gameCent:
-                ShareView()
+                AboutView()
             }
 
             TabBar()

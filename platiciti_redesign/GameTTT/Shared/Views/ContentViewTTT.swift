@@ -50,6 +50,7 @@ struct ContentViewTTT : View {
             Spacer()
             Text(navigationTitle)
                 .font(.title2)
+                .multilineTextAlignment(.center)
            
             HStack {
                 RestartButton(resetPublisher: resetPublisher)

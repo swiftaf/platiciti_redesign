@@ -29,6 +29,8 @@ struct NavigationBar: View {
                 .padding(.leading, 20)
                 .padding(.top, 20)
                 .offset(y: hasScrolled ? -4 : 0)
+                .accessibilityElement()
+                .accessibilityAddTraits(.isHeader)
             
             HStack(spacing:20) {
                 Button {
@@ -78,6 +80,9 @@ struct NavigationBar: View {
                         .foregroundColor(.secondary)
                         .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 14, style: .continuous))
                         .strokeStyle(cornerRadius: 14)
+                        .accessibilityElement()
+                        .accessibilityLabel("Game Center")
+                        .accessibilityAddTraits(.isButton)
                 
                 
                     

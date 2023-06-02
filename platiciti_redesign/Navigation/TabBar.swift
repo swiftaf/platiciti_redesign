@@ -44,14 +44,6 @@ struct TabBar: View {
         ForEach(tabItems) { item in
             Button {
                 
-//                if item.tab == .gameCent {
-//                    isGameCenterOpen = true
-//                    withAnimation(.spring(response: 0.4, dampingFraction: 0.6)) {
-//                        selectedTab = item.tab
-//                        color = item.color
-//                    }
-//
-//                } else {
                     withAnimation(.spring(response: 0.4, dampingFraction: 0.6)) {
                         selectedTab = item.tab
                         color = item.color
@@ -60,11 +52,12 @@ struct TabBar: View {
                 
                 
             } label: {
+                
                 VStack(spacing: 0) {
-                    Image(systemName: item.icon)
+                        Image(systemName: item.icon)
                         .symbolVariant(.fill)
-                        .font(.body.bold())
-                        .frame(width: 60, height: 29)
+                        .font(.title.bold())
+                        .frame(width: 60, height: 40)
                     Text(item.text)
                         .font(.caption2)
                 }

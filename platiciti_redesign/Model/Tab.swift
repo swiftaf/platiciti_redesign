@@ -16,10 +16,10 @@ struct TabItem: Identifiable {
 }
 
 var tabItems = [
-    TabItem(text: "All Games", icon: "gamecontroller", tab: .games, color: .purple),
-    TabItem(text: "Play History", icon: "calendar", tab: .calHist, color: .blue),
-    TabItem(text: "Share Results", icon: "star.bubble", tab: .shareRes, color: .indigo),
-    TabItem(text: "Game Center", icon: "person.crop.circle", tab: .gameCent, color: .pink)
+    TabItem(text: "Home", icon: "house.fill", tab: .games, color: .purple),
+    TabItem(text: "Progress", icon: "chart.bar.fill", tab: .calHist, color: .blue),
+    TabItem(text: "Accessibility", icon: "figure.wave.circle.fill", tab: .shareRes, color: .indigo),
+    TabItem(text: "About", icon: "apps.iphone", tab: .gameCent, color: Color("Color 2"))
 ]
 
 enum Tab: String {

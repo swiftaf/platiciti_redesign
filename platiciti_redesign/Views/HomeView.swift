@@ -32,6 +32,7 @@ struct HomeView: View {
                     .foregroundColor(.secondary)
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .padding(.horizontal, 20)
+                    .accessibilityAddTraits(.isHeader)
                 
                 LazyVGrid(columns: [GridItem(.adaptive(minimum: 300), spacing: 20)], spacing: 20) {
                     if !show {
@@ -123,6 +124,8 @@ struct HomeView: View {
                                 .offset(x: 50, y: -75)
                                 .offset(x: minX/2)
                         )
+                        .accessibilityElement(children: .combine)
+                        .accessibilityAddTraits(.isButton)
                 }
             }
         }
@@ -142,6 +145,8 @@ struct HomeView: View {
                     selectedID = game.id
                 }
             }
+                .accessibilityElement(children: .combine)
+                .accessibilityAddTraits(.isButton)
         }
     }
     
